@@ -1,0 +1,392 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import "../base.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main
+      class="flex flex-col items-center justify-center h-screen mx-96 text-center"
+    >
+      <h1 class="font-semibold text-4xl mb-8">
+        Empower Yourself to Reach New Heights
+      </h1>
+      <p class="mb-8">
+        Join a community with like-minded souls who are dedicated to overcoming
+        limiting beliefs and achiving their full potential.
+      </p>
+      <button type="button" class="btn-primary">Learn more</button>
+    </main>
+
+    <section
+      class="grid grid-flow-row md:grid-cols-2 m-24 gap-6 items-center justify-items-center"
+    >
+      <div>
+        <h2 class="font-semibold text-4xl mb-8">
+          A community where we feed into each other's cup.
+        </h2>
+        <p class="mb-4">
+          Welcome to Empower Me Collective, where we believe that every
+          individual has the power to transform their life and reach their
+          highest potential.
+        </p>
+        <p class="mb-4">
+          Our platform provides the support, tools, and environment you need to
+          break thought barries and embrace you true capabilities.
+        </p>
+        <p>
+          Whether you are an aspiring entrepeneur, navigation a career change,
+          or looking to grow your bussines, we are here to support you every
+          step of the way.
+        </p>
+      </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+        class="size-3/4"
+      >
+        <path
+          class="icons"
+          d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6h96 32H424c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
+        ></path></svg
+      >
+    </section>
+
+    <section class="m-24 gap-6">
+      <header class="p-8 gap-6 justify-items-center text-center">
+        <h2 class="font-semibold text-4xl mb-8">Why Empower Me Collective?</h2>
+        <p>
+          We understand that breaking free from limiting beliefs and stepping
+          into your full potential is a journey that requieres support,
+          guidance, and a nurturing environment.
+        </p>
+      </header>
+      <ul class="grid grid-flow-row md:grid-cols-3 gap-6 mb-6">
+        <li class="p-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              class="icons"
+              d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6h96 32H424c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
+            ></path></svg
+          >
+          <h3 class="font-semibold text-2xl mb-4">Supportive Community</h3>
+          <p class="mb-4">
+            You don't have to go thought this journey alone. By joining Empower
+            Me you become part of a collective of like-minded individuals who
+            are all worjing towards similar goals.
+          </p>
+          <p>
+            Out community offers a safe space to share your victories, and find
+            encouragment from peers who understand your challenges.
+          </p>
+        </li>
+        <li class="p-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              class="icons"
+              d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6h96 32H424c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
+            ></path></svg
+          >
+          <h3 class="font-semibold text-2xl mb-4">Tailored for Entrepeneurs</h3>
+          <p class="mb-4">
+            Whether you are just starting out, looking to grow your bussines, or
+            navigation a career change, our content is specifically designed to
+            address the unique challenges faced by entrepeneurs.
+          </p>
+          <p>
+            We understand the entrepeneurial journey and provide the tools and
+            support you need to thrive.
+          </p>
+        </li>
+        <li class="p-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              class="icons"
+              d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6h96 32H424c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
+            ></path></svg
+          >
+          <h3 class="font-semibold text-2xl mb-4">Holistic Approach</h3>
+          <p class="mb-4">
+            We believe in nurturing every aspect of your growth. Our programs
+            not only focus on professional skills but also on personal
+            development.
+          </p>
+          <p>
+            By cultivating a growth mindset and building empowering habits, we
+            help you become the person you need to achieve your dreams.
+          </p>
+        </li>
+      </ul>
+      <div class="flex flex-col items-center">
+        <button type="button" class="btn-primary">Start your journey</button>
+      </div>
+    </section>
+
+    <section class="m-24 p-8 gap-6 justify-items-center text-center">
+      <h3 class="font-semibold text-2xl mb-8">Habits are magic...</h3>
+      <p class="leading-8">
+        Bt taking action, habits become the evidence of the person we're
+        becoming with changes the way we see ourselves. And if we change how we
+        view ourselves, we change what we believe is possible.
+      </p>
+    </section>
+
+    <section class="m-24 gap-6 justify-items-center">
+      <header class="m-8 p-8 gap-6 justify-items-center text-center">
+        <h3 class="font-semibold text-2xl mb-8">What others are saying?</h3>
+        <p class="leading-8">
+          We understand that breaking free from limiting beliefs and stepping
+          into your full potential is a journey that requires support, guidance,
+          and nurturing environment.
+        </p>
+      </header>
+
+      <ul class="grid grid-flow-row md:grid-cols-3 gap-6">
+        <li class="px-4">
+          <header class="flex flex-col items-center gap-6 my-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="rounded-full size-1/2"
+              ><path
+                class="icons"
+                d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"
+              ></path></svg
+            >
+            <h4 class="font-semibold text-xl">Jontel</h4>
+          </header>
+          <p>
+            "Manu is an inspiring and relatable coach. She understands the
+            balance between accomplishing our professional goals while
+            maintaining time for emotional, social, physical, and spiritual
+            wellness - so often overlooked in traditional patriarcal approaches
+            to success."
+          </p>
+        </li>
+        <li class="p-4">
+          <header class="flex flex-col items-center gap-6 my-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="rounded-full size-1/2"
+            >
+              <path
+                class="icons"
+                d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"
+              ></path></svg
+            >
+            <h4 class="font-semibold text-xl">Florinda</h4>
+          </header>
+          <p>
+            "It was mind blowing for me to realize how fast we can change and
+            how less stressful my life is now."
+          </p>
+        </li>
+        <li class="p-4">
+          <header class="flex flex-col items-center gap-6 my-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="rounded-full size-1/2"
+            >
+              <path
+                class="icons"
+                d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"
+              ></path></svg
+            >
+            <h4 class="font-semibold text-xl">Tahnee</h4>
+          </header>
+          <p>
+            "I realy enjoy the trainig. It made me instantly think of all the
+            small habits I could/should implement. And it didn't feel like a
+            'you do this wrong you must change' it was more like 'growth is
+            great' and here is how you can start."
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section
+      class="grid grid-flow-row md:grid-cols-2 m-24 gap-6 justify-items-center"
+    >
+      <div>
+        <h2 class="font-semibold text-4xl mb-16">
+          This community is for you if ...
+        </h2>
+        <ul class="mb-4 list-disc pl-6">
+          <li>You're navigation throught a time of change</li>
+          <li>You have a dream you'd like to pursue</li>
+          <li>You are interested in ways to grow and better yourself</li>
+          <li>Sometimes life feels too much</li>
+          <li>You want to sit in the driver's seat of your life</li>
+        </ul>
+        <p class="text-sm">
+          Disclaimer: This is not for you if you are not willing to take
+          responsability and ownership for your actions and intentions.
+        </p>
+      </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+        class="size-3/4"
+      >
+        <path
+          class="icons"
+          d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6h96 32H424c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
+        ></path></svg
+      >
+    </section>
+
+    <section class="m-16 gap-6 justify-items-center">
+      <header class="m-8 p-8 gap-6 justify-items-center text-center">
+        <h3 class="font-semibold text-2xl mb-8">Take back your power</h3>
+        <p class="leading-8">
+          Start with the Habit Masterclass or the Habit Online Course to get
+          clear on your habits, dream and goals. Either course is designed to
+          take you throught the process step by step.
+        </p>
+      </header>
+
+      <ul class="grid grid-flow-row md:grid-cols-3 gap-6">
+        <li class="flex flex-col items-center gap-6 mb-6 px-16">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              class="icons"
+              d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6h96 32H424c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
+            ></path></svg
+          >
+          <button type="button" class="btn-secundary"
+            >Habit Online Course</button
+          >
+        </li>
+        <li class="flex flex-col items-center gap-6 mb-6 px-16">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              class="icons"
+              d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6h96 32H424c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
+            ></path></svg
+          >
+          <button type="button" class="btn-secundary">Habit MasterClass</button>
+        </li>
+        <li class="flex flex-col items-center gap-6 mb-6 px-16">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              class="icons"
+              d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6h96 32H424c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
+            ></path></svg
+          >
+          <button type="button" class="btn-secundary"
+            >Empower Me Collective</button
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section
+      class="grid grid-flow-row md:grid-cols-2 m-16 gap-6 justify-items-center"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+        class="size-3/4"
+      >
+        <path
+          class="icons"
+          d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6h96 32H424c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
+        ></path></svg
+      >
+      <div>
+        <h2 class="font-semibold text-4xl mb-16">
+          What is the Empower Me Collective
+        </h2>
+        <p class="mb-4">
+          During the masterclass and online course you are being equipped with
+          the tools and your goal that you are excited about the achive.
+        </p>
+        <p class="mb-4">
+          Now after completion the actual transformation is happening, when you
+          repeat certain activities.
+        </p>
+        <p class="mb-8">
+          Therefore we created the Empower Me Collective - a collective that
+          empowers each individual, with love, support and the right mindset to
+          achieve your deepest desires.
+        </p>
+
+        <button type="button" class="btn-primary">Start your journey</button>
+      </div>
+    </section>
+
+    <section class="m-16">
+      <h2 class="font-semibold text-4xl mb-16 text-center">QnA's</h2>
+      <ul class="flex flex-col gap-6">
+        <li class="bg-slate-200 p-4">
+          <details>
+            <summary class="font-medium cursor-pointer pl-12"
+              >I can't decide what to do first, the Online Course or the Habit
+              Master Class? What is the difference?
+            </summary>
+            <p class="my-4 px-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
+              ultricies leo integer malesuada nunc vel risus commodo viverra.
+              Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi
+              quis eleifend quam adipiscing. In hac habitasse platea dictumst
+              vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada
+              fames ac turpis egestas. Eget magna fermentum iaculis eu non diam
+              phasellus vestibulum lorem. Varius sit amet mattis vulputate enim.
+              Habitasse platea dictumst quisque sagittis. Integer quis auctor
+              elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+            </p>
+          </details>
+        </li>
+        <li class="bg-slate-200 p-4">
+          <details>
+            <summary class="font-medium cursor-pointer pl-12"
+              >When is the next Habit Master Class?</summary
+            >
+            <p class="my-4 px-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
+              ultricies leo integer malesuada nunc vel risus commodo viverra.
+              Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi
+              quis eleifend quam adipiscing. In hac habitasse platea dictumst
+              vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada
+              fames ac turpis egestas. Eget magna fermentum iaculis eu non diam
+              phasellus vestibulum lorem. Varius sit amet mattis vulputate enim.
+              Habitasse platea dictumst quisque sagittis. Integer quis auctor
+              elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+            </p>
+          </details>
+        </li>
+        <li class="bg-slate-200 p-4">
+          <details>
+            <summary class="font-medium cursor-pointer pl-12"
+              >Is the Habit Master Class an in-person or online event?</summary
+            ><p class="my-4 px-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
+              ultricies leo integer malesuada nunc vel risus commodo viverra.
+              Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi
+              quis eleifend quam adipiscing. In hac habitasse platea dictumst
+              vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada
+              fames ac turpis egestas. Eget magna fermentum iaculis eu non diam
+              phasellus vestibulum lorem. Varius sit amet mattis vulputate enim.
+              Habitasse platea dictumst quisque sagittis. Integer quis auctor
+              elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+            </p>
+          </details>
+        </li>
+      </ul>
+    </section>
+    <Footer />
+  </body>
+</html>

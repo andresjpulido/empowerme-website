@@ -1,0 +1,51 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<header>
+	<nav class="flex flex-row justify-between">
+		<h1><a href="/"  class="font-bold text-3xl">{SITE_TITLE}</a></h1>
+		<div class="internal-links">
+			<HeaderLink href="/" >Home</HeaderLink>
+			<HeaderLink href="/masterclass">Habit Masterclass</HeaderLink>
+			<HeaderLink href="/courses">Online Courses</HeaderLink> 
+			<HeaderLink href="/about">About Us</HeaderLink>
+		</div>
+		
+	</nav>
+</header>
+<style>
+	header {
+		margin: 0;
+		padding: 0 1em;
+		background: white;
+		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+	}
+	 
+
+	h2 a,
+	h2 a.active {
+		text-decoration: none;
+	}
+	 
+	nav a {
+		padding: 1em 0.5em;
+		color: #5C6173;
+		border-bottom: 4px solid transparent;
+		text-decoration: none;
+	}
+	nav a.active {
+		text-decoration: none;
+		border-bottom-color: var(--accent);
+	}
+	.social-links,
+	.social-links a {
+		display: flex;
+	}
+	@media (max-width: 720px) {
+		.social-links {
+			display: none;
+		}
+	}
+</style>
