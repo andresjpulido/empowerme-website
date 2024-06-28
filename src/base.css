@@ -18,10 +18,13 @@
   details {
   }
   summary {
-    list-style: none; 
-    background: url("/empowerme-website/plus.svg") no-repeat 14px 50%; 
+    list-style: none;  
   }
-   
+  @media only screen and (min-width: 600px) {
+    summary { 
+      background: url("/empowerme-website/plus.svg") no-repeat 14px 50%; 
+    }
+  }
 }
 
 @layer components {
