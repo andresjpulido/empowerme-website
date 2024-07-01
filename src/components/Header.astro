@@ -1,51 +1,284 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
 ---
 
-<header>
-	<nav class="flex flex-row justify-between">
-		<h1><a href="/"  class="font-bold text-3xl">{SITE_TITLE}</a></h1>
-		<div class="internal-links">
-			<HeaderLink href="/" >Home</HeaderLink>
-			<HeaderLink href="/masterclass">Habit Masterclass</HeaderLink>
-			<HeaderLink href="/courses">Online Courses</HeaderLink> 
-			<HeaderLink href="/about">About Us</HeaderLink>
-		</div>
-		
-	</nav>
-</header>
-<style>
-	header {
-		margin: 0;
-		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
-	}
-	 
+<Fragment>
+  <nav class="hidden md:block sticky top-0 bg-white z-10">
+    <header class="flex flex-row justify-between">
+      <h1>
+        <a href="/" class="font-bold text-3xl">Empower Me</a><span
+          >Collective</span
+        >
+      </h1>
+      <div class="internal-links">
+        <HeaderLink href="/empowerme-website/">Home</HeaderLink>
+        <HeaderLink href="/empowerme-website/masterclass"
+          >Habit Masterclass</HeaderLink
+        >
+        <HeaderLink href="/empowerme-website/courses">Online Courses</HeaderLink
+        >
+        <HeaderLink href="/empowerme-website/about">About Us</HeaderLink>
+      </div>
+    </header>
+  </nav>
 
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
-	}
-	 
-	nav a {
-		padding: 1em 0.5em;
-		color: #5C6173;
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-	}
-	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
-	}
-	.social-links,
-	.social-links a {
-		display: flex;
-	}
-	@media (max-width: 720px) {
-		.social-links {
-			display: none;
-		}
-	}
+  <nav class="md:hidden sticky top-0 bg-one pl-2">
+    <div class="flex justify-between items-center bg-white">
+      <h1>
+        <a href="/" class="font-bold text-3xl">Empower Me</a><span
+          >Collective</span
+        >
+      </h1>
+
+      <button
+        id="menu-button"
+        class="p-2"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <svg
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          width="24"
+          viewBox="0 0 156 264"
+          enable-background="new 0 0 156 264"
+          xml:space="preserve"
+        >
+          <path
+            fill="#333"
+            opacity="1.000000"
+            stroke="none"
+            d="
+  M45.261364,84.822792 
+	 C45.780926,83.891472 46.954277,82.734917 46.722595,82.062393 
+	 C42.858925,70.847023 39.603901,59.324806 34.594597,48.629055 
+	 C29.753164,38.291744 21.293337,38.092445 13.224287,47.012859 
+	 C7.636775,52.606941 7.058646,60.954758 12.021314,66.810669 
+	 C19.997187,76.222137 30.977041,80.987320 41.927155,85.721870 
+	 C42.498604,85.968948 43.607254,84.973595 45.261364,84.822792 
+ M115.898903,80.411987 
+	 C116.236359,84.852081 118.434227,81.665016 119.193123,80.964996 
+	 C124.644012,75.936943 130.201477,70.976723 135.180222,65.499664 
+	 C139.145538,61.137497 142.929428,56.397892 145.750443,51.253647 
+	 C151.098450,41.501339 148.074371,34.214947 137.334015,29.404106 
+	 C130.660156,25.172127 125.902184,25.777748 122.849220,32.953754 
+	 C119.462303,40.914742 117.166382,49.451626 115.370171,57.943924 
+	 C113.800499,65.365242 113.583786,73.072731 112.673119,81.549416 
+	 C114.507721,80.484894 115.189598,80.089241 115.898903,80.411987 
+ M82.692772,72.270920 
+	 C84.179184,74.697372 84.950424,73.266472 85.440437,71.669456 
+	 C86.555634,68.034920 87.883186,64.418800 88.516556,60.691883 
+	 C90.447166,49.331665 93.277046,37.947544 93.517632,26.525562 
+	 C93.768242,14.627787 90.667252,6.222136 73.883827,7.289789 
+	 C65.117828,7.621709 61.674404,10.958333 62.047482,19.541979 
+	 C62.894047,39.019207 72.242912,55.637852 80.383774,72.633614 
+	 C80.401283,72.670151 81.543213,72.168091 82.692772,72.270920 
+ M90.763191,196.115204 
+	 C94.997467,195.290817 99.298271,194.712982 103.452538,193.592056 
+	 C112.848633,191.056732 121.552307,187.094086 128.896255,180.477844 
+	 C141.963257,168.705658 144.164642,154.104370 140.499557,137.744949 
+	 C137.973190,126.468231 131.853745,117.454002 122.670166,111.012947 
+	 C115.133690,105.727119 106.446716,102.622726 97.089432,101.094398 
+	 C86.957031,99.439461 77.005066,98.885696 67.756126,103.527237 
+	 C46.743698,114.072227 36.247784,132.839859 33.415386,154.864883 
+	 C30.692076,176.041687 33.602230,197.321274 41.777771,217.494537 
+	 C46.546818,229.262238 53.065395,239.744858 63.484097,247.328323 
+	 C79.460136,258.956818 97.339394,259.733978 115.875038,256.021698 
+	 C118.682159,255.459503 121.341225,254.158035 124.781670,253.048843 
+	 C126.344070,252.605682 127.906471,252.162521 130.284912,251.487885 
+	 C127.697685,250.032074 125.697182,248.963074 123.751198,247.802658 
+	 C104.097023,236.082397 90.866577,220.144150 90.763191,196.115204 
+ z"
+          ></path>
+          <path
+            fill="#63C6D0"
+            opacity="1.000000"
+            stroke="none"
+            d="
+ M124.068771,253.198517 
+	 C121.341225,254.158035 118.682159,255.459503 115.875038,256.021698 
+	 C97.339394,259.733978 79.460136,258.956818 63.484097,247.328323 
+	 C53.065395,239.744858 46.546818,229.262238 41.777771,217.494537 
+	 C33.602230,197.321274 30.692076,176.041687 33.415386,154.864883 
+	 C36.247784,132.839859 46.743698,114.072227 67.756126,103.527237 
+	 C77.005066,98.885696 86.957031,99.439461 97.089432,101.094398 
+	 C106.446716,102.622726 115.133690,105.727119 122.670166,111.012947 
+	 C131.853745,117.454002 137.973190,126.468231 140.499557,137.744949 
+	 C144.164642,154.104370 141.963257,168.705658 128.896255,180.477844 
+	 C121.552307,187.094086 112.848633,191.056732 103.452538,193.592056 
+	 C99.298271,194.712982 94.997467,195.290817 89.960152,196.140869 
+	 C85.416016,196.113098 86.483543,198.813629 86.653671,200.774979 
+	 C88.806885,225.599228 102.584084,242.155930 124.068771,253.198517 
+ z"
+          ></path>
+          <path
+            fill="#65C6D0"
+            opacity="1.000000"
+            stroke="none"
+            d="
+ M74.662292,7.380872 
+	 C90.667252,6.222136 93.768242,14.627787 93.517632,26.525562 
+	 C93.277046,37.947544 90.447166,49.331665 88.516556,60.691883 
+	 C87.883186,64.418800 86.555634,68.034920 85.440437,71.669456 
+	 C84.950424,73.266472 84.179184,74.697372 82.386810,71.713806 
+	 C81.586395,69.603981 81.085426,68.053307 80.598541,66.498222 
+	 C76.467438,53.303406 71.695930,40.262150 68.475670,26.848532 
+	 C66.818115,19.944162 65.851868,11.691254 74.662292,7.380872 
+ z"
+          ></path>
+          <path
+            fill="#65C6D0"
+            opacity="1.000000"
+            stroke="none"
+            d="
+ M137.713409,29.912889 
+	 C148.074371,34.214947 151.098450,41.501339 145.750443,51.253647 
+	 C142.929428,56.397892 139.145538,61.137497 135.180222,65.499664 
+	 C130.201477,70.976723 124.644012,75.936943 119.193123,80.964996 
+	 C118.434227,81.665016 116.236359,84.852081 115.898445,79.657623 
+	 C116.587257,74.495781 116.834427,69.961594 118.054092,65.706123 
+	 C120.956299,55.580116 124.019135,45.476345 127.638557,35.591137 
+	 C129.134705,31.504940 132.917725,29.264175 137.713409,29.912889 
+ z"
+          ></path>
+          <path
+            fill="#64C6CF"
+            opacity="1.000000"
+            stroke="none"
+            d="
+ M13.954803,46.943138 
+	 C21.293337,38.092445 29.753164,38.291744 34.594597,48.629055 
+	 C39.603901,59.324806 42.858925,70.847023 46.722595,82.062393 
+	 C46.954277,82.734917 45.780926,83.891472 44.662270,84.489059 
+	 C36.671871,79.526924 29.159546,75.078918 21.920900,70.222939 
+	 C13.494187,64.569946 10.902763,56.656528 13.954803,46.943138 
+ z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- menu mobile -->
+    <section
+      id="mobile-menu"
+      class="hide-menu fixed top-[64px] left-0 z-50 w-full h-full transition-transform bg-white border-primary-blue"
+    >
+      <div class="bg-one w-[75%] h-full drop-shadow-2xl text-nine">
+        <ul
+          class="unset flex flex-col justify-center text-text-bold gap-4 [&>li]:p-1 px-6"
+        >
+          <HeaderLink href="/empowerme-website/">Home</HeaderLink>
+          <HeaderLink href="/empowerme-website/masterclass"
+            >Habit Masterclass</HeaderLink
+          >
+          <HeaderLink href="/empowerme-website/courses"
+            >Online Courses</HeaderLink
+          >
+          <HeaderLink href="/empowerme-website/about">About Us</HeaderLink>
+        </ul>
+      </div>
+    </section>
+  </nav>
+</Fragment>
+
+<script>
+  // @ts-nocheck
+
+  document.querySelector("#menu-button").addEventListener("click", () => {
+    const currentState = document
+      .querySelector("#menu-button")
+      .getAttribute("data-state");
+    if (!currentState || currentState === "closed") {
+      document
+        .querySelector("#menu-button")
+        .setAttribute("data-state", "opened");
+      document
+        .querySelector("#menu-button")
+        .setAttribute("aria-expanded", "true");
+
+      const menuElem = document.querySelector("#mobile-menu");
+      menuElem.classList.remove("hide-menu");
+      menuElem.classList.add("show-menu");
+      document.body.style.overflow = "hidden";
+    } else {
+      document
+        .querySelector("#menu-button")
+        .setAttribute("data-state", "closed");
+      document
+        .querySelector("#menu-button")
+        .setAttribute("aria-expanded", "false");
+
+      const menuElem = document.querySelector("#mobile-menu");
+      menuElem.classList.remove("show-menu");
+      menuElem.classList.add("hide-menu");
+      document.body.style.overflow = "auto";
+    }
+  });
+</script>
+
+<style>
+  .hide-menu {
+    transform: translateX(-100%);
+  }
+  .show-menu {
+    transform: translateX(0%);
+  }
+
+  .button-three {
+    --button-color: black;
+    overflow: hidden;
+  }
+
+  .button-three .hamburger {
+    transition:
+      translate 1s,
+      rotate 1s;
+  }
+
+  .button-three[aria-expanded="true"] .hamburger {
+    translate: 10px -10px;
+    rotate: 0.125turn;
+  }
+
+  .button-three .line {
+    transition: 1s;
+    stroke-dasharray: 60 31 60 300;
+  }
+
+  .button-three[aria-expanded="true"] .line {
+    stroke-dasharray: 60 105 60 300;
+    stroke-dashoffset: -90;
+  }
+</style>
+
+<style>
+  h2 a,
+  h2 a.active {
+    text-decoration: none;
+  }
+
+  nav a {
+    padding: 1em 0.5em;
+    color: #5c6173;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+  }
+  nav a.active {
+    text-decoration: none;
+    border-bottom-color: var(--accent);
+  }
+  .social-links,
+  .social-links a {
+    display: flex;
+  }
+  @media (max-width: 720px) {
+    .social-links {
+      display: none;
+    }
+  }
 </style>

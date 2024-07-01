@@ -2,18 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'monserrat-black';
+  src: url('/empowerme-website/fonts/Montserrat-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'monserrat-regular';
+  src: url('/empowerme-website/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'monserrat-bold';
+  src: url('/empowerme-website/fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'monserrat-semibold';
+  src: url('/empowerme-website/fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'monserrat-medium';
+  src: url('/empowerme-website/fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
+  body{
+    font-family: 'monserrat-semibold', sans-serif;
+  }
   h1 {
     @apply text-2xl text-[#5C6173];
+   
+   font-family: 'monserrat-medium', sans-serif;
+    
   }
   h2 {
     @apply text-xl text-[#5C6173];
+     
   }
   h3 {
     @apply text-2xl text-[#5C6173];
   }
   h4 {
     @apply text-xl text-[#5C6173];
+  }
+  p{
+    font-family: 'monserrat-regular', sans-serif;
   }
   details {
   }
