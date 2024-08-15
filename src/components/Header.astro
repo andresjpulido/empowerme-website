@@ -1,34 +1,41 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
+import { Image } from "astro:assets";
+
+import logo from "../../public/logo.svg";
 ---
 
 <Fragment>
-  <nav class="hidden md:block sticky top-0 bg-white z-10">
-    <header class="flex flex-row justify-between">
-      <h1>
-        <a href="/" class="font-bold text-3xl">Empower Me</a><span
-          >Collective</span
-        >
-      </h1>
-      <div class="internal-links">
-        <HeaderLink href="/empowerme-website/">Home</HeaderLink>
-        <HeaderLink href="/empowerme-website/masterclass"
-          >Habit Masterclass</HeaderLink
-        >
-        <HeaderLink href="/empowerme-website/courses">Online Courses</HeaderLink
-        >
-        <HeaderLink href="/empowerme-website/about">About Us</HeaderLink>
+  <!-- nav desktop -->
+  <nav class="hidden md:block relative top-0 bg-blue z-10">
+    <header class="flex flex-row justify-between absolute top-0 w-full z-10">
+      <div class="flex ml-16 mt-4 items-center gap-3">
+        <h1 class="flex flex-col">
+          <span
+            class="font-monserrat font-black text-xl bg-primary text-[#4C8CA2]"
+            >EMPOWER ME</span
+          >
+          <span class="font-monserrat font-light text-xl text-primary"
+            >COLLECTIVE</span
+          >
+        </h1>
+      </div>
+      <div class="text-primary font-hindlight">
+        <HeaderLink href="/masterclass">Regular Meet ups</HeaderLink>
+        <HeaderLink href="/courses">Habit MasterClass</HeaderLink>
+        <HeaderLink href="/about">
+          <button class="btn-secondary"> Connect and grow </button>
+        </HeaderLink>
       </div>
     </header>
   </nav>
-
-  <nav class="md:hidden sticky top-0 bg-one pl-2">
-    <div class="flex justify-between items-center bg-white">
-      <h1>
-        <a href="/" class="font-bold text-3xl">Empower Me</a><span
-          >Collective</span
-        >
+  <!-- nav mobile -->
+  <nav class="md:hidden sticky top-0 bg-one z-10">
+    <div class="flex justify-between items-center bg-primary absolute w-full">
+      <h1 class="font-monserrat text-sm text-tertiary flex flex-col ml-2">
+        <span class="font-bold">Empower Me</span>
+        <span>COLLECTIVE</span>
       </h1>
 
       <button
@@ -166,20 +173,15 @@ import { SITE_TITLE } from "../consts";
     <!-- menu mobile -->
     <section
       id="mobile-menu"
-      class="hide-menu fixed top-[64px] left-0 z-50 w-full h-full transition-transform bg-white border-primary-blue"
+      class="hide-menu fixed left-0 top-14 z-50 w-full h-full transition-transform btn-primary border-primary-blue"
     >
-      <div class="bg-one w-[75%] h-full drop-shadow-2xl text-nine">
+      <div class="bg-one w-[75%] drop-shadow-2xl text-primary">
         <ul
           class="unset flex flex-col justify-center text-text-bold gap-4 [&>li]:p-1 px-6"
         >
-          <HeaderLink href="/empowerme-website/">Home</HeaderLink>
-          <HeaderLink href="/empowerme-website/masterclass"
-            >Habit Masterclass</HeaderLink
-          >
-          <HeaderLink href="/empowerme-website/courses"
-            >Online Courses</HeaderLink
-          >
-          <HeaderLink href="/empowerme-website/about">About Us</HeaderLink>
+          <HeaderLink href="/masterclass">Regular Meet ups</HeaderLink>
+          <HeaderLink href="/courses">Habit masterclass</HeaderLink>
+          <HeaderLink href="/about">Connect and grow</HeaderLink>
         </ul>
       </div>
     </section>
@@ -264,7 +266,6 @@ import { SITE_TITLE } from "../consts";
 
   nav a {
     padding: 1em 0.5em;
-    color: #5c6173;
     border-bottom: 4px solid transparent;
     text-decoration: none;
   }

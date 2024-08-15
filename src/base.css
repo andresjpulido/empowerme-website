@@ -42,26 +42,30 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'hindlight';
+  src: url('/fonts/Hind-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'monserrat';
+  src: url('/empowerme-website/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+ 
 @layer base {
   body{
-    font-family: 'monserrat-semibold', sans-serif;
-  }
-  h1 {
-    @apply text-2xl text-[#5C6173];
-   
-   font-family: 'monserrat-medium', sans-serif;
-    
-  }
-  h2 {
-    @apply text-xl text-[#5C6173];
      
+    background-color: #F2F2F2;
   }
-  h3 {
-    @apply text-2xl text-[#5C6173];
-  }
-  h4 {
-    @apply text-xl text-[#5C6173];
-  }
+   
+   
   p{
     font-family: 'monserrat-regular', sans-serif;
   }
@@ -79,10 +83,13 @@
 
 @layer components {
   .btn-primary {
-    @apply text-white bg-[#355E82] hover:bg-[#3283ca] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
+    @apply bg-five text-primary hover:bg-[#3283ca] focus:ring-4 focus:ring-blue-300 font-medium rounded-sm text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
   }
-  .btn-secundary {
-    @apply text-[#355E82] bg-white border-solid border-[#355E82] border-2 hover:bg-[#3283ca] hover:text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
+  .btn-secondary {
+    @apply bg-primary text-five border-solid border-primary border-2 hover:bg-[#3283ca] hover:text-primary focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
+  }
+  .btn-tertiary {
+    @apply text-primary border-solid border-primary border-2 hover:bg-[#3283ca] hover:text-primary focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
   }
   .icons {
     @apply text-white bg-[#355E82] fill-[#355E82];
@@ -91,7 +98,7 @@
     @apply text-[#355E82] bg-white fill-white;
   }
   .footer {
-    @apply flex flex-col p-16 gap-10 text-white bg-[#355E82] text-center;
+    @apply grid grid-flow-row grid-cols-4 p-16  text-tenth bg-eleventh ;
   }
   .social-links {
     @apply flex flex-row justify-center gap-6;
