@@ -98,7 +98,7 @@
     @apply text-[#355E82] bg-white fill-white;
   }
   .footer {
-    @apply grid grid-flow-row grid-cols-4 p-16  text-tenth bg-eleventh ;
+    @apply grid grid-flow-row md:grid-cols-4 gap-4 p-16  text-tenth bg-eleventh ;
   }
   .social-links {
     @apply flex flex-row justify-center gap-6;
