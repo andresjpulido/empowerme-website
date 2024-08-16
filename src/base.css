@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'monserrat-black';
-  src: url('/empowerme-website/fonts/Montserrat-Black.ttf') format('truetype');
+  src: url('/fonts/Montserrat-Black.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: 'monserrat-regular';
-  src: url('/empowerme-website/fonts/Montserrat-Regular.ttf') format('truetype');
+  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: 'monserrat-bold';
-  src: url('/empowerme-website/fonts/Montserrat-Bold.ttf') format('truetype');
+  src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -28,7 +28,7 @@
 
 @font-face {
   font-family: 'monserrat-semibold';
-  src: url('/empowerme-website/fonts/Montserrat-SemiBold.ttf') format('truetype');
+  src: url('/fonts/Montserrat-SemiBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -36,7 +36,7 @@
 
 @font-face {
   font-family: 'monserrat-medium';
-  src: url('/empowerme-website/fonts/Montserrat-Medium.ttf') format('truetype');
+  src: url('/fonts/Montserrat-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -60,13 +60,20 @@
 
 @font-face {
   font-family: 'monserrat';
-  src: url('/empowerme-website/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
- 
+@font-face {
+  font-family: 'seaweedscript';
+  src: url('/fonts/SeaweedScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   body{
      
@@ -91,13 +98,16 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-five text-primary hover:bg-[#3283ca] focus:ring-4 focus:ring-blue-300 font-medium rounded-sm text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
+    @apply bg-five text-primary border-primary border-2 hover:bg-[#3283ca] focus:ring-4 focus:ring-blue-300 font-medium rounded-sm text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
   }
   .btn-secondary {
     @apply bg-primary text-five border-solid border-primary border-2 hover:bg-[#3283ca] hover:text-primary focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
   }
   .btn-tertiary {
     @apply text-primary border-solid border-primary border-2 hover:bg-[#3283ca] hover:text-primary focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
+  }
+  .btn-fourth {
+    @apply text-tenth border-solid border-tenth border-2 hover:bg-[#3283ca] hover:text-primary focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
   }
   .icons {
     @apply text-white bg-[#355E82] fill-[#355E82];
@@ -106,9 +116,10 @@
     @apply text-[#355E82] bg-white fill-white;
   }
   .footer {
-    @apply grid grid-flow-row md:grid-cols-4 gap-4 p-16  text-tenth bg-eleventh ;
+    @apply grid grid-flow-row md:grid-cols-4 md:px-36 md:py-16 p-8  text-tenth bg-eleventh ;
   }
   .social-links {
     @apply flex flex-row justify-center gap-6;
   }
 }
+ 

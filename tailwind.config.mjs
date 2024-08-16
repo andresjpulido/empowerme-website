@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {},
     colors: {
-      primary: "#FAF9F7",
-      secondary: "#DE895A",
+      primary: "#FBFAF9",
+      secondary: "#E27255",
       tertiary: "#03080C",
       fourth: "#834718",
       five: "#E27255",
@@ -13,7 +13,7 @@ export default {
       seven: "#f64d52",
       eight: "#102e46", //dark bg
       nine: "#a7b9c3", //clear fg
-      tenth: "#5598A6",
+      tenth: "#2D6873",
       eleventh: "#D1E4E8",
       white: "red",
       "blue-300": "blue",
@@ -50,6 +50,9 @@ export default {
       ],
       hindmedium:[
         "hindmedium"
+      ],
+      seaweedscript:[
+        "seaweedscript"
       ]
     },
   },

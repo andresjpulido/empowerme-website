@@ -1,21 +1,21 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import Cover from "../components/Cover.astro"; 
+import Cover from "../components/Cover.astro";
 import Seo from "../components/Seo.astro";
-import siteData from "../data/siteData.json"; 
+import siteData from "../data/siteData.json";
 import "../base.css";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" /> 
-    <meta name="viewport" content="width=device-width" /> 
-    <meta name="generator" content={Astro.generator} /> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
     <meta name="theme-color" content="var(--primary-color)" />
     <link rel="icon" href="favicon.ico" />
-    <title>{siteData.title}</title> 
+    <title>{siteData.title}</title>
     <Seo {siteData} />
   </head>
   <body>
@@ -23,12 +23,12 @@ import "../base.css";
     <Cover />
 
     <section
-      class="flex flex-col gap-6 items-center justify-center bg-primary text-five py-16"
+      class="flex flex-col gap-6 items-center justify-center bg-primary text-five py-24 px-4"
     >
-      <h2 class="font-bold md:text-5xl text-3xl w-3/5 text-center">
+      <h2 class="font-montserratbold md:text-4xl text-3xl md:w-1/3 text-center">
         Discover the power of the Collective
       </h2>
-      <p class="w-3/5 leading-8 text-center">
+      <p class="font-hindlight md:w-1/3 leading-8 text-center">
         A community of entrepreneurs tackling the challenges of growing a
         business by overcoming our inner blocks, working on our mindset and
         becoming the version of ourselves most aligned with our desired
@@ -40,15 +40,15 @@ import "../base.css";
     <section
       class="grid grid-flow-row md:grid-cols-2 items-start bg-[url('/images/flowers.png')] bg-no-repeat bg-cover text-primary md:p-20"
     >
-      <section class="m-8 p-16 bg-primary/30 backdrop-blur-md">
-        <h3 class="font-monserrat font-bold text-3xl mb-6">What If..</h3>
+      <section class="m-8 md:p-16 p-8 bg-primary/30 backdrop-blur-md">
+        <h3 class="font-monserratbold font-bold text-4xl mb-6">What If..</h3>
         <p class="leading-relaxed">
           the garden was the version of yourself that would best grow your
           business so you can lead life at your own terms, what flowers aka
           skills, habits, perspectives, attitudes would you grow?
         </p>
       </section>
-      <section class="md:mt-32 m-8 p-16 bg-primary/30 backdrop-blur-md">
+      <section class="md:mt-32 m-8 md:p-16 p-8 bg-primary/30 backdrop-blur-md">
         <h3 class="font-monserrat text-3xl mb-6">
           Let’s discover it together and grow it one flower at a time!
         </h3><p class="leading-relaxed mb-6">
@@ -64,36 +64,38 @@ import "../base.css";
 
     <section class="m-12 md:m-24 gap-6 text-five">
       <header class="p-8 gap-6 justify-items-center text-center">
-        <h2 class="font-semibold text-4xl">Living life on your own terms</h2>
+        <h2 class="font-montserratbold text-4xl">
+          Living life on your own terms
+        </h2>
       </header>
       <ul class="grid grid-flow-row md:grid-cols-3 gap-6 mb-6">
         <li class="p-4">
-          <img src="/images/woman.png" alt="" />
-          <h3 class="font-bold font-hindlight text-2xl my-4">
+          <img src="/images/women.png" alt="" />
+          <h3 class="font-bold font-hindmedium text-2xl my-4">
             Co-create a space to grow and connect.
           </h3>
-          <p class="mb-4 font-light">
+          <p class="font-hindlight mb-4 font-light">
             You don’t have to go through this journey alone. By joining
             EmpowerMe you become part of a collective of like-minded individuals
             who are all working towards similar goals.
           </p>
-          <p class="font-light">
+          <p class="font-hindlight font-light">
             This is a safe space for deep conversations, sharing perspectives
             and learnings. Grow together and find encouragement and
             accountability from peers who understand your challenges.
           </p>
         </li>
         <li class="p-4">
-          <img src="/images/women.png" alt="" />
-          <h3 class="font-bold font-hindlight text-2xl my-4">
+          <img src="/images/woman-laptop.png" alt="" />
+          <h3 class="font-bold font-hindmedium text-2xl my-4">
             Fast track your journey & grow your business
           </h3>
-          <p class="mb-4 font-light">
+          <p class="font-hindlight mb-4 font-light">
             Whether you're just starting out, are new to business or looking to
             grow it, our content is specifically designed to address the unique
             challenges faced by entrepreneurs.
           </p>
-          <p class="font-light">
+          <p class="font-hindlight font-light">
             We unlock challenges specific to the entrepreneurial journey through
             the lenses of the mindset and provide the tools and support you need
             to overcome any blocks holding you back from soaring high.
@@ -101,16 +103,16 @@ import "../base.css";
         </li>
         <li class="p-4">
           <img src="/images/road.png" alt="" />
-          <h3 class="font-bold font-hindlight text-2xl my-4">
+          <h3 class="font-bold font-hindmedium text-2xl my-4">
             Align with your desired outcomes
           </h3>
-          <p class="mb-4 font-light">
+          <p class="font-hindlight mb-4 font-light">
             The stories we tell ourselves can keep us small. By making these
             invisible blocks visible, cultivating a growth mindset and building
             empowering habits, we help you become the version of yourself that
             will take you to your desired outcomes.
           </p>
-          <p class="mb-4 font-light">
+          <p class="font-hindlight mb-4 font-light">
             The collective offers the right environment to see right through
             these blocks, feed new perspectives and support you to grow yourself
             as a person and your business.
@@ -127,7 +129,7 @@ import "../base.css";
        rounded-lg"
     >
       <article class="md:p-16 p-8 w-full bg-primary/30 backdrop-blur-sm">
-        <h3 class="font-monserrat font-bold text-3xl mb-4 text-five">
+        <h3 class="font-montserratbold font-bold text-4xl mb-4 text-five">
           Habits are like magic
         </h3>
         <p class="font-hindmedium md:px-44 leading-8 text-five">
@@ -142,17 +144,17 @@ import "../base.css";
       class="grid grid-flow-row md:grid-cols-2 md:p-16 p-8 gap-8 items-center justify-items-center bg-primary text-five"
     >
       <div class="md:px-8">
-        <h2 class="font-monserrat font-bold text-4xl mb-8">
+        <h2 class="font-montserratbold font-bold text-4xl mb-4">
           This Collective is for you if ...
         </h2>
-        <ul class="mb-8 list-disc pl-6 leading-8">
+        <ul class="font-hindlight mb-4 list-disc pl-6 leading-8">
           <li>You want to live life on your own terms.</li>
           <li>You’re starting out or growing your business.</li>
           <li>You seek ways to grow and better yourself.</li>
           <li>You feel isolated in your entrepreneurial journey.</li>
           <li>You’re ready to take charge of your life and aspirations.</li>
         </ul>
-        <section class="text-primary bg-five p-6 rounded-lg">
+        <section class="text-primary bg-five p-4 rounded-lg">
           <h4 class="font-bold">Disclaimer</h4>
           <p class="font-hindlight">
             This is not for you if you don't believe in your ability to change
@@ -162,57 +164,71 @@ import "../base.css";
       </div>
       <div class="flex flex-col gap-4">
         <img
-          src="/images/women.png"
+          src="/images/couple1.png"
           alt="Collective"
-          class="rounded-3xl size-40"
+          class="rounded-3xl h-44"
         />
         <img
-          src="/images/women.png"
+          src="/images/couple2.png"
           alt="Collective"
-          class="rounded-3xl size-40"
+          class="rounded-3xl h-44"
         />
       </div>
     </section>
 
     <section class="bg-primary text-tenth md:p-16 p-4">
-      <h2 class="text-2xl font-bold">Take your power back</h2>
-      <h3>Begin your Journey and cultivate your success</h3>
+      <h2 class="font-montserratbold text-4xl font-bold">
+        Take your power back
+      </h2>
+      <h3 class="font-hindlight">
+        Begin your Journey and cultivate your success
+      </h3>
       <article class="grid grid-flow-row md:grid-cols-3 my-8 gap-8">
         <section class="text-primary bg-tenth rounded-md p-4">
           <img src="/images/coffee2.png" alt="" class="rounded-md" />
-          <h3 class="text-xl my-4 font-bold">Regular Meet ups</h3>
-          <h4 class="font-bold mb-4">Connect, Learn, and Grow</h4>
+          <h3 class="font-hindmedium text-xl my-4 font-bold">
+            EMPOWER ME Collective
+          </h3>
+          <h4 class="font-hindlight font-bold mb-4">
+            Connect, Learn, and Grow
+          </h4>
           <p class="font-light mb-4">
-            Join our in-person or online meet-ups to connect with peers, tackle
-            business challenges, and share insights. These gatherings offer
-            support and inspiration to help you achieve your goals and
-            accelerate your journey.
+            Join the Collective for regular meetings in-person or online
+            addressing challenges we face in growing our business. These
+            gatherings offer a space for real conversations, insights, support
+            and accountability to help you achieve your goals and accelerate
+            your journey.
           </p>
           <button class="btn-secondary">Find out more</button>
         </section>
         <section class="text-primary bg-tenth rounded-md p-4">
           <img src="/images/keyboard.png" alt="" class="rounded-md" />
-          <h3 class="text-xl my-4 font-bold">EMPOWER ME Masterclass</h3>
-          <h4 class="font-bold mb-4">
-            Habit Masterclass - Transform your being
+          <h3 class="font-hindmedium text-xl my-4 font-bold">
+            EMPOWER ME Masterclass
+          </h3>
+          <h4 class="font-hindlight font-bold mb-4">
+            Leveraging habits to transform your being
           </h4>
           <p class="font-light mb-4">
-            Dive into our Habit Masterclass to learn powerful techniques for
-            building success-driven routines. Discover practical tools to
-            develop empowering habits, cultivate a growth mindset, and unlock
-            your potential to achieve your goals.
+            Dive into our Habits Masterclass to learn powerful techniques to
+            identify what is holding you back, come out with a clear action
+            plans and then learn how to leverage the transformational power of
+            habits to aligned yourself with your goals.
           </p>
           <button class="btn-secondary">Explore the Masterclass</button>
         </section>
         <section class="text-primary bg-tenth rounded-md p-4">
           <img src="/images/flower.png" alt="" class="rounded-md" />
-          <h3 class="text-xl my-4 font-bold">Monthly Micro Learnings</h3>
-          <h4 class="font-bold mb-4">Connect, Learn, and Grow</h4>
+          <h3 class="font-hindmedium text-xl my-4 font-bold">
+            EMPOWER ME Flowers
+          </h3>
+          <h4 class="font-hindlight font-bold mb-4">Monthly Micro Learnings</h4>
           <p class="font-light mb-8">
-            Join our in-person or online meet-ups to connect with peers, tackle
-            business challenges, and share insights. These gatherings offer
-            support and inspiration to help you achieve your goals and
-            accelerate your journey.
+            The individual Flowers take you on a journey of becoming the version
+            of yourself that will bring your desired garden to life, aka the
+            version of yourself aligned to living life at your own terms. The
+            flowers are shared on monthly so we can all honour the growth
+            process one step at a time. Available soon!
           </p>
           <p class="font-bold">AVAILABLE SOON!</p>
         </section>
@@ -220,15 +236,15 @@ import "../base.css";
     </section>
 
     <section class="gap-6 justify-items-center bg-secondary">
-      <h3 class="font-semibold text-2xl text-primary p-10 pl-20">
+      <h3 class="font-monserrat font-semibold text-2xl text-primary p-10 pl-20">
         What is the collective saying?
       </h3>
 
       <ul
-        class="grid grid-flow-row md:grid-cols-3 gap-6 text-five md:mx-16 mx-4"
+        class="grid grid-flow-row md:grid-cols-3 items-start gap-6 text-five md:mx-16 mx-4"
       >
         <li class="m-4 p-6 bg-primary rounded-md">
-          <p>
+          <p class="font-hindmedium">
             I really enjoyed the training. It made me instantly think of all the
             small habits I could/should implement. And it didn’t feel like a
             ‘you do this wrong you must change’ it was more like ‘growth is
@@ -242,11 +258,11 @@ import "../base.css";
                 class="rounded-full size-16"
               />
             </div>
-            <div>Tainee Marsh</div>
+            <div class="font-montserratbold">Tainee Marsh</div>
           </div>
         </li>
         <li class="m-4 p-6 bg-primary rounded-md">
-          <p>
+          <p class="font-hindmedium">
             It was mind blowing for me to realise how fast we can change and how
             less stressful my life is now.
           </p>
@@ -258,11 +274,11 @@ import "../base.css";
                 class="rounded-full size-16"
               />
             </div>
-            <div>Florinda</div>
+            <div class="font-montserratbold">Florinda</div>
           </div>
         </li>
         <li class="m-4 p-6 bg-primary rounded-md">
-          <p>
+          <p class="font-hindmedium">
             Definitely, the support has an amazing impact. [...] People around
             you invest in you and say I support your idea [...] It's I don't
             know a mixture of 'they trust me that I can do this!' So, the
@@ -276,7 +292,7 @@ import "../base.css";
                 class="rounded-full size-16"
               />
             </div>
-            <div>Sevgi</div>
+            <div class="font-montserratbold">Sevgi</div>
           </div>
         </li>
       </ul>
@@ -285,52 +301,68 @@ import "../base.css";
       </div>
     </section>
 
-    <section class="grid grid-flow-row md:grid-cols-2 bg-primary md:p-16">
+    <section
+      class="grid grid-flow-row md:grid-cols-2 gap-24 bg-primary md:p-24 p-8"
+    >
       <section class="text-five">
-        <h2 class="text-2xl font-bold">Upcoming events</h2>
-        <p class="pt-4">Don’t miss a thing...</p>
-        <p class="py-4">Missing text</p>
-      </section>
-      <section class="bg-five p-8 rounded-md">
-        <img src="/images/sketchbook.png" alt="" class="w-48 rounded-md" />
-        <h3 class="text-primary text-xl my-4">
-          Don’t miss out on our upcoming events
-        </h3>
-        <p class="text-primary font-light">
-          Join the waiting list for the regular meet ups.
+        <h2 class="font-montserratbold text-4xl font-bold">Upcoming events</h2>
+        <p class="font-hindlight pt-4">
+          We are now opening our registrations for a number of EMPOWER ME Garden
+          meeting groups, both in person and online.
         </p>
-        <section class="flex my-4">
+        <p class="font-hindlight py-4">
+          The Collective is carefully matched together in intimate groups to
+          allow for the journey to unfold in an empowering way, feeding our cup.
+          For, when our cup is full we can feed into others’ as well, creating
+          an upward spiral of co-creation, connection and growth.
+        </p>
+        <p class="font-hindlight">
+          Let’s create a wonderful garden for ourselves and join all our gardens
+          together in synergy, cross-polinating and thriving together into an
+          ecosystem.
+        </p>
+      </section>
+      <section class="flex flex-col bg-five p-8 rounded-md">
+        <img src="/images/sketchbook.png" alt="" class="h-56 rounded-md" />
+        <h3 class="text-primary text-2xl my-4">
+          Be notified for our upcoming events
+        </h3>
+        <p class="font-hindlight text-primary font-light">
+          Join the waiting list for the Collective meet ups and Masterclasses.
+        </p>
+        <section class="flex flex-row items-center justify-between my-4 gap-4">
           <input
             type="text"
-            class="rounded-md p-2"
+            class="rounded-md p-2 w-full"
             placeholder="you@example.com"
           />
-          <button class="bg-secondary rounded-md p-2 ml-4 text-sm"
-            >Submit</button
-          >
+          <button class="btn-primary">Submit</button>
         </section>
       </section>
     </section>
 
-    <section class="flex flex-col justify-center items-center text-fourth h-96">
-      <h2 class="text-2xl font-bold md:w-2/5 w-3/4 text-center leading-loose">
+    <section
+      class="flex flex-col justify-center items-center text-primary h-96 bg-[url('/images/quote2-bg.png')] bg-no-repeat bg-cover p-8">
+      <h2
+        class="font-montserratbold text-3xl font-bold md:w-1/3 w-3/4 text-center leading-relaxed"
+      >
         “When the student is ready, the teacher within show us”
       </h2>
-      <p class="leading-loose">by Manu</p>
+      <p class="mt-4">by Manu, co-founder of the EMPOWER ME Collective</p>
     </section>
 
     <section
       class="bg-primary text-five p-8 py-16 flex flex-col items-center justify-center"
     >
       <article class="md:w-2/4">
-        <h3 class="font-bold text-xl mb-8">Let me explain...</h3>
+        <h3 class="font-bold text-xl pb-8">Let me explain...</h3>
         <div class="grid grid-flow-row md:grid-cols-2 font-light gap-8 w-full">
-          <p>
+          <p class="font-hindlight">
             We know ourselves best! We are the only ones that have the whole
             context in a story and that can truly say what is the best way
             forward. Yet, we trust others can show us the way.
           </p>
-          <p>
+          <p class="font-hindlight">
             Here, at the EmpowerMe Collective, we co-create, share and learn
             together so we can strengthen that inner instinct, that wise voice
             within and let our inner teacher come out.
@@ -339,23 +371,26 @@ import "../base.css";
       </article>
     </section>
 
-    <section>
-      <article class="text-fourth md:w-2/5 md:m-16 p-8 px-12 bg-primary">
-        <h2 class="font-bold text-2xl">Our Vision</h2>
-        <p class="mt-8">
-          the garden was the version of yourself that would best grow your
-          business so you can lead life at your own terms, what flowers aka
-          skills, habits, perspectives, attitudes would you grow?
+    <section
+      class="bg-[url('/images/shadows.png')] bg-no-repeat bg-cover h-[670px] relative"
+    >
+      <article
+        class="text-five md:w-2/5 md:m-16 m-4 p-8 px-12 bg-primary/30 backdrop-blur-sm absolute"
+      >
+        <h2 class="font-montserratbold font-bold text-4xl">Our Vision</h2>
+        <p class="font-hindlight mt-8">
+          Empowering the Collective to live life at our own terms, embracing the
+          abundance, love and happiness life has to offer!
         </p>
       </article>
     </section>
 
-    <section class="md:m-16 m-4">
-      <h2 class="font-bold text-4xl md:m-16 text-five">QnA</h2>
-      <ul class="flex flex-col md:gap-6">
-        <li class="p-4">
+    <section class="md:mx-36 md:my-24 m-4">
+      <h2 class="font-bold text-4xl text-five">QnA</h2>
+      <ul class="flex flex-col md:gap-6 mt-8">
+        <li class="">
           <details>
-            <summary class="font-medium cursor-pointer pl-12"
+            <summary class="font-medium cursor-pointer p-4 bg-primary"
               >I can't decide what to do first, the Online Course or the Habit
               Master Class? What is the difference?
             </summary>
@@ -373,12 +408,12 @@ import "../base.css";
             </p>
           </details>
         </li>
-        <li class="p-4">
+        <li class="">
           <details>
-            <summary class="font-medium cursor-pointer pl-12"
+            <summary class="font-medium cursor-pointer p-4 bg-primary"
               >When is the next Habit Master Class?</summary
             >
-            <p class="my-4 px-4">
+            <p class="text-sm my-4 px-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
               ultricies leo integer malesuada nunc vel risus commodo viverra.
@@ -392,26 +427,26 @@ import "../base.css";
             </p>
           </details>
         </li>
-        <li class="p-4">
+        <li class="">
           <details>
-            <summary class="font-medium cursor-pointer pl-12"
+            <summary class="font-medium cursor-pointer p-4 bg-primary"
               >Is the Habit Master Class an in-person or online event?</summary
-            ><p class="my-4 px-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
-              ultricies leo integer malesuada nunc vel risus commodo viverra.
-              Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi
-              quis eleifend quam adipiscing. In hac habitasse platea dictumst
-              vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada
-              fames ac turpis egestas. Eget magna fermentum iaculis eu non diam
-              phasellus vestibulum lorem. Varius sit amet mattis vulputate enim.
-              Habitasse platea dictumst quisque sagittis. Integer quis auctor
-              elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-            </p>
+            >
+            <p class="text-sm my-4 px-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo
+            integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu
+            turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing.
+            In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet
+            volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum
+            iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis
+            vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis
+            auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.</p>
           </details>
         </li>
       </ul>
     </section>
+
     <Footer />
   </body>
 </html>
