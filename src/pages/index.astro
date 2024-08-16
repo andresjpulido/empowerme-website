@@ -1,16 +1,22 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import Cover from "../components/Cover.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import Cover from "../components/Cover.astro"; 
+import Seo from "../components/Seo.astro";
+import siteData from "../data/siteData.json"; 
 import "../base.css";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width" /> 
+    <meta name="generator" content={Astro.generator} /> 
+    <meta name="theme-color" content="var(--primary-color)" />
+    <link rel="icon" href="favicon.ico" />
+    <title>{siteData.title}</title> 
+    <Seo {siteData} />
   </head>
   <body>
     <Header />
@@ -32,7 +38,7 @@ import "../base.css";
     </section>
 
     <section
-      class="grid grid-flow-row md:grid-cols-2 items-start bg-[url('/images/flowers.png')] text-primary md:p-20"
+      class="grid grid-flow-row md:grid-cols-2 items-start bg-[url('/images/flowers.png')] bg-no-repeat bg-cover text-primary md:p-20"
     >
       <section class="m-8 p-16 bg-primary/30 backdrop-blur-md">
         <h3 class="font-monserrat font-bold text-3xl mb-6">What If..</h3>
@@ -117,10 +123,10 @@ import "../base.css";
     </section>
 
     <section
-      class="py-16 md:px-48 gap-6 justify-items-center text-center bg-[url('/images/quote-bg.png')]
+      class="py-16 md:px-48 px-8 gap-6 justify-items-center text-center bg-[url('/images/quote-bg.png')] bg-no-repeat bg-cover
        rounded-lg"
     >
-      <article class="p-16 w-full bg-primary/30 backdrop-blur-sm">
+      <article class="md:p-16 p-8 w-full bg-primary/30 backdrop-blur-sm">
         <h3 class="font-monserrat font-bold text-3xl mb-4 text-five">
           Habits are like magic
         </h3>
