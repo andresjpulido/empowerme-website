@@ -8,7 +8,7 @@ export default {
       secondary: "#DE895A",
       tertiary: "#03080C",
       fourth: "#834718",
-      five: "#D4785C",
+      five: "#E27255",
       six: "#5EA3B5",
       seven: "#f64d52",
       eight: "#102e46", //dark bg
@@ -47,6 +47,9 @@ export default {
       ],
       hindlight:[
         "hindlight"
+      ],
+      hindmedium:[
+        "hindmedium"
       ]
     },
   },

@@ -51,6 +51,14 @@
 }
 
 @font-face {
+  font-family: 'hindmedium';
+  src: url('/fonts/Hind-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'monserrat';
   src: url('/empowerme-website/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
