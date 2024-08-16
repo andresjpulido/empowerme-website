@@ -9,8 +9,10 @@ import logo from "../../public/logo.svg";
 <Fragment>
   <!-- nav desktop -->
   <nav class="hidden md:block relative top-0 bg-blue z-10">
-    <header class="flex flex-row justify-between absolute top-0 w-full z-10 px-24 pt-4">
-      <div class="flex  mt-4 items-center gap-3">
+    <header
+      class="flex flex-row justify-between absolute top-0 w-full z-10 px-24 pt-4"
+    >
+      <div class="flex mt-4 items-center gap-3">
         <h1 class="flex flex-col">
           <span
             class="font-monserratbold font-bold text-lg bg-primary text-[#2D6873] pr-1"
@@ -21,18 +23,15 @@ import logo from "../../public/logo.svg";
           >
         </h1>
       </div>
-      <div class="text-primary font-hindlight">
-        <HeaderLink href="/masterclass">Collective</HeaderLink>
-        <HeaderLink href="/courses">MasterClass</HeaderLink>
-        <HeaderLink href="/about">
-          <button class="btn-secondary"> Connect and grow </button>
-        </HeaderLink>
+      <div>
+        <HeaderLink  class="text-primary font-hindlight" href="/masterclass">Collective</HeaderLink>
+        <HeaderLink class="text-primary font-hindlight"  href="/courses">MasterClass</HeaderLink> 
+        <button type="button" class="btn-secondary">Connect and grow</button>
       </div>
     </header>
   </nav>
   <!-- nav mobile -->
   <nav class="md:hidden sticky top-0 bg-one z-10">
-    
     <!-- menu mobile -->
     <section
       id="mobile-menu"
