@@ -24,8 +24,12 @@ import logo from "../../public/logo.svg";
         </h1>
       </div>
       <div>
-        <HeaderLink  class="text-primary font-hindlight" href="/masterclass">Collective</HeaderLink>
-        <HeaderLink class="text-primary font-hindlight"  href="/courses">MasterClass</HeaderLink> 
+        <HeaderLink class="text-primary font-hindlight" href="/masterclass"
+          >Collective</HeaderLink
+        >
+        <HeaderLink class="text-primary font-hindlight" href="/courses"
+          >MasterClass</HeaderLink
+        >
         <button type="button" class="btn-secondary">Connect and grow</button>
       </div>
     </header>
@@ -41,9 +45,9 @@ import logo from "../../public/logo.svg";
         <ul
           class="unset flex flex-col justify-center text-text-bold gap-4 [&>li]:p-1 px-6"
         >
-          <HeaderLink href="/masterclass">Regular Meet ups</HeaderLink>
-          <HeaderLink href="/courses">Habit masterclass</HeaderLink>
-          <HeaderLink href="/about">Connect and grow</HeaderLink>
+          <li><HeaderLink href="/masterclass">Regular Meet ups</HeaderLink></li>
+          <li><HeaderLink href="/courses">Habit masterclass</HeaderLink></li>
+          <li><HeaderLink href="/about">Connect and grow</HeaderLink></li>
         </ul>
       </div>
     </section>
@@ -53,7 +57,7 @@ import logo from "../../public/logo.svg";
 <script>
   // @ts-nocheck
 
-  document.querySelector("#menu-button").addEventListener("click", () => {
+  document.querySelector("#menu-button")?.addEventListener("click", () => {
     const currentState = document
       .querySelector("#menu-button")
       .getAttribute("data-state");
