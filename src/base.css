@@ -91,7 +91,7 @@
   }
   @media only screen and (min-width: 600px) {
     summary { 
-      background: url("/plus.svg") no-repeat 14px 50%; 
+      background: url("/images/plus.svg") no-repeat 14px 50%; 
     }
   }
 }
