@@ -4,6 +4,7 @@ import Footer from "../components/Footer.astro";
 import Cover from "../components/Cover.astro";
 import Seo from "../components/Seo.astro";
 import siteData from "../data/siteData.json";
+import QnA from "../components/QnA.astro";
 import "../base.css";
 ---
 
@@ -38,7 +39,7 @@ import "../base.css";
     </section>
 
     <section
-      class="grid grid-flow-row md:grid-cols-2 items-start bg-[url('/images/flowers.png')] bg-no-repeat bg-cover text-primary md:p-20"
+      class="grid grid-flow-row md:grid-cols-2 items-start bg-[url('/images/flowers.webp')] bg-no-repeat bg-cover text-primary md:p-20"
     >
       <section class="m-8 md:p-16 p-8 bg-primary/30 backdrop-blur-md">
         <h3 class="font-monserratbold font-bold text-4xl mb-6">What If..</h3>
@@ -86,7 +87,7 @@ import "../base.css";
           </p>
         </li>
         <li class="p-4">
-          <img src="/images/woman-laptop.png" alt="" />
+          <img src="/images/woman-laptop.webp" alt="" />
           <h3 class="font-bold font-hindmedium text-2xl my-4">
             Fast track your journey & grow your business
           </h3>
@@ -102,7 +103,7 @@ import "../base.css";
           </p>
         </li>
         <li class="p-4">
-          <img src="/images/road.png" alt="" />
+          <img src="/images/road.webp" alt="" />
           <h3 class="font-bold font-hindmedium text-2xl my-4">
             Align with your desired outcomes
           </h3>
@@ -164,12 +165,12 @@ import "../base.css";
       </div>
       <div class="flex flex-col gap-4">
         <img
-          src="/images/couple1.png"
+          src="/images/couple1.webp"
           alt="Collective"
           class="rounded-3xl h-44"
         />
         <img
-          src="/images/couple2.png"
+          src="/images/couple2.webp"
           alt="Collective"
           class="rounded-3xl h-44"
         />
@@ -185,7 +186,7 @@ import "../base.css";
       </h3>
       <article class="grid grid-flow-row md:grid-cols-3 my-8 gap-8">
         <section class="text-primary bg-tenth rounded-md p-4">
-          <img src="/images/coffee2.png" alt="" class="rounded-md" />
+          <img src="/images/coffee2.webp" alt="" class="rounded-md" />
           <h3 class="font-hindmedium text-xl my-4 font-bold">
             EMPOWER ME Collective
           </h3>
@@ -202,7 +203,7 @@ import "../base.css";
           <button class="btn-secondary">Find out more</button>
         </section>
         <section class="text-primary bg-tenth rounded-md p-4">
-          <img src="/images/keyboard.png" alt="" class="rounded-md" />
+          <img src="/images/keyboard.webp" alt="" class="rounded-md" />
           <h3 class="font-hindmedium text-xl my-4 font-bold">
             EMPOWER ME Masterclass
           </h3>
@@ -218,7 +219,7 @@ import "../base.css";
           <button class="btn-secondary">Explore the Masterclass</button>
         </section>
         <section class="text-primary bg-tenth rounded-md p-4">
-          <img src="/images/flower.png" alt="" class="rounded-md" />
+          <img src="/images/flower.webp" alt="" class="rounded-md" />
           <h3 class="font-hindmedium text-xl my-4 font-bold">
             EMPOWER ME Flowers
           </h3>
@@ -287,7 +288,7 @@ import "../base.css";
           <div class="flex flex-row items-center mt-6 gap-4">
             <div>
               <img
-                src="/images/Sevgi.png"
+                src="/images/Sevgi.webp"
                 alt=""
                 class="rounded-full size-16"
               />
@@ -385,67 +386,7 @@ import "../base.css";
       </article>
     </section>
 
-    <section class="md:mx-36 md:my-24 m-4">
-      <h2 class="font-bold text-4xl text-five">QnA</h2>
-      <ul class="flex flex-col md:gap-6 mt-8">
-        <li class="">
-          <details>
-            <summary class="font-medium cursor-pointer p-4 bg-primary"
-              >I can't decide what to do first, the Online Course or the Habit
-              Master Class? What is the difference?
-            </summary>
-            <p class="text-sm my-4 px-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
-              ultricies leo integer malesuada nunc vel risus commodo viverra.
-              Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi
-              quis eleifend quam adipiscing. In hac habitasse platea dictumst
-              vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada
-              fames ac turpis egestas. Eget magna fermentum iaculis eu non diam
-              phasellus vestibulum lorem. Varius sit amet mattis vulputate enim.
-              Habitasse platea dictumst quisque sagittis. Integer quis auctor
-              elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-            </p>
-          </details>
-        </li>
-        <li class="">
-          <details>
-            <summary class="font-medium cursor-pointer p-4 bg-primary"
-              >When is the next Habit Master Class?</summary
-            >
-            <p class="text-sm my-4 px-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
-              ultricies leo integer malesuada nunc vel risus commodo viverra.
-              Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi
-              quis eleifend quam adipiscing. In hac habitasse platea dictumst
-              vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada
-              fames ac turpis egestas. Eget magna fermentum iaculis eu non diam
-              phasellus vestibulum lorem. Varius sit amet mattis vulputate enim.
-              Habitasse platea dictumst quisque sagittis. Integer quis auctor
-              elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-            </p>
-          </details>
-        </li>
-        <li class="">
-          <details>
-            <summary class="font-medium cursor-pointer p-4 bg-primary"
-              >Is the Habit Master Class an in-person or online event?</summary
-            >
-            <p class="text-sm my-4 px-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo
-            integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu
-            turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing.
-            In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet
-            volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum
-            iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis
-            vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis
-            auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.</p>
-          </details>
-        </li>
-      </ul>
-    </section>
+    <QnA />
 
     <Footer />
   </body>
