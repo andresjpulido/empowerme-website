@@ -6,6 +6,11 @@ import Seo from "../components/Seo.astro";
 import siteData from "../data/siteData.json";
 import QnA from "../components/QnA.astro";
 import "../base.css";
+
+Astro.response.headers.set(
+  "Cache-Control",
+  "public, max-age=300, s-maxage=3600"
+);
 ---
 
 <!doctype html>
@@ -71,7 +76,7 @@ import "../base.css";
       </header>
       <ul class="grid grid-flow-row md:grid-cols-3 gap-6 mb-6">
         <li class="p-4">
-          <img src="/images/women.png" alt="" />
+          <img src="/images/women.png" alt="EmpowerMe woman" decoding="async" loading="lazy" />
           <h3 class="font-bold font-hindmedium text-2xl my-4">
             Co-create a space to grow and connect.
           </h3>
@@ -87,7 +92,12 @@ import "../base.css";
           </p>
         </li>
         <li class="p-4">
-          <img src="/images/woman-laptop.webp" alt="" />
+          <img
+            src="/images/woman-laptop.webp"
+            alt="EmpowerMe worker"
+            decoding="async"
+            loading="lazy"
+          />
           <h3 class="font-bold font-hindmedium text-2xl my-4">
             Fast track your journey & grow your business
           </h3>
@@ -103,7 +113,7 @@ import "../base.css";
           </p>
         </li>
         <li class="p-4">
-          <img src="/images/road.webp" alt="" />
+          <img src="/images/road.webp" alt="EmpowerMe road" decoding="async" loading="lazy" />
           <h3 class="font-bold font-hindmedium text-2xl my-4">
             Align with your desired outcomes
           </h3>
@@ -166,13 +176,17 @@ import "../base.css";
       <div class="flex flex-col gap-4">
         <img
           src="/images/couple1.webp"
-          alt="Collective"
+          alt="Collective women"
           class="rounded-3xl h-44"
+          decoding="async"
+          loading="lazy"
         />
         <img
           src="/images/couple2.webp"
-          alt="Collective"
+          alt="Collective woman"
           class="rounded-3xl h-44"
+          decoding="async"
+          loading="lazy"
         />
       </div>
     </section>
@@ -186,7 +200,13 @@ import "../base.css";
       </h3>
       <article class="grid grid-flow-row md:grid-cols-3 my-8 gap-8">
         <section class="text-primary bg-tenth rounded-md p-4">
-          <img src="/images/coffee2.webp" alt="" class="rounded-md" />
+          <img
+            src="/images/coffee2.webp"
+            alt="EmpowerMe coffee"
+            class="rounded-md"
+            decoding="async"
+            loading="lazy"
+          />
           <h3 class="font-hindmedium text-xl my-4 font-bold">
             EMPOWER ME Collective
           </h3>
@@ -203,7 +223,13 @@ import "../base.css";
           <button class="btn-secondary">Find out more</button>
         </section>
         <section class="text-primary bg-tenth rounded-md p-4">
-          <img src="/images/keyboard.webp" alt="" class="rounded-md" />
+          <img
+            src="/images/keyboard.webp"
+            alt="EmpowerMe keyboard"
+            class="rounded-md"
+            decoding="async"
+            loading="lazy"
+          />
           <h3 class="font-hindmedium text-xl my-4 font-bold">
             EMPOWER ME Masterclass
           </h3>
@@ -219,7 +245,13 @@ import "../base.css";
           <button class="btn-secondary">Explore the Masterclass</button>
         </section>
         <section class="text-primary bg-tenth rounded-md p-4">
-          <img src="/images/flower.webp" alt="" class="rounded-md" />
+          <img
+            src="/images/flower.webp"
+            alt="EmpowerMe Flower"
+            class="rounded-md"
+            decoding="async"
+            loading="lazy"
+          />
           <h3 class="font-hindmedium text-xl my-4 font-bold">
             EMPOWER ME Flowers
           </h3>
@@ -255,8 +287,10 @@ import "../base.css";
             <div>
               <img
                 src="/images/Tainee.png"
-                alt=""
+                alt="EmpowerMe - Tainee"
                 class="rounded-full size-16"
+                decoding="async"
+                loading="lazy"
               />
             </div>
             <div class="font-montserratbold">Tainee Marsh</div>
@@ -271,8 +305,10 @@ import "../base.css";
             <div>
               <img
                 src="/images/Florinda.png"
-                alt=""
+                alt="EmpowerMe - Florinda"
                 class="rounded-full size-16"
+                decoding="async"
+                loading="lazy"
               />
             </div>
             <div class="font-montserratbold">Florinda</div>
@@ -289,8 +325,10 @@ import "../base.css";
             <div>
               <img
                 src="/images/Sevgi.webp"
-                alt=""
+                alt="EmpowerMe - Sevgi"
                 class="rounded-full size-16"
+                decoding="async"
+                loading="lazy"
               />
             </div>
             <div class="font-montserratbold">Sevgi</div>
@@ -324,7 +362,13 @@ import "../base.css";
         </p>
       </section>
       <section class="flex flex-col bg-five p-8 rounded-md">
-        <img src="/images/sketchbook.png" alt="" class="h-56 rounded-md" />
+        <img
+          src="/images/sketchbook.png"
+          alt="EmpowerMe sketchbook"
+          class="h-56 rounded-md"
+          decoding="async"
+          loading="lazy"
+        />
         <h3 class="text-primary text-2xl my-4">
           Be notified for our upcoming events
         </h3>
@@ -343,7 +387,8 @@ import "../base.css";
     </section>
 
     <section
-      class="flex flex-col justify-center items-center text-primary h-96 bg-[url('/images/quote2-bg.png')] bg-no-repeat bg-cover p-8">
+      class="flex flex-col justify-center items-center text-primary h-96 bg-[url('/images/quote2-bg.png')] bg-no-repeat bg-cover p-8"
+    >
       <h2
         class="font-montserratbold text-3xl font-bold md:w-1/3 w-3/4 text-center leading-relaxed"
       >
