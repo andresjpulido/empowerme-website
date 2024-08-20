@@ -15,6 +15,8 @@ export default {
       nine: "#a7b9c3", //clear fg
       tenth: "#2D6873",
       eleventh: "#D1E4E8",
+      accordionbg: "#F5F5F5",
+      accordionborder: "#D9D9D9",
       white: "red",
       "blue-300": "blue",
       "blue-600": "blue",

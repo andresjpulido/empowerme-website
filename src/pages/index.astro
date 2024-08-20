@@ -5,7 +5,7 @@ import Cover from "../components/Cover.astro";
 import Seo from "../components/Seo.astro";
 import siteData from "../data/siteData.json";
 import QnA from "../components/QnA.astro";
-import Testimonies from "../components/Testimonies.astro"
+import Testimonies from "../components/Testimonies.astro";
 import "../base.css";
 
 Astro.response.headers.set(
@@ -22,6 +22,16 @@ Astro.response.headers.set(
     <meta name="generator" content={Astro.generator} />
     <meta name="theme-color" content="var(--primary-color)" />
     <link rel="icon" href="favicon.svg" />
+    <link rel="preload" href="/images/cover-bg.webp" as="image" />
+    <link rel="preload" href="/images/quote-bg.png" as="image" />
+    <link
+      rel="preload"
+      href="/fonts/Montserrat-Bold"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+
     <title>{siteData.title}</title>
     <Seo {siteData} />
   </head>
@@ -77,7 +87,14 @@ Astro.response.headers.set(
       </header>
       <ul class="grid grid-flow-row md:grid-cols-3 gap-6 mb-6">
         <li class="p-4">
-          <img src="/images/women.png" alt="EmpowerMe Collective woman" decoding="async" loading="lazy" title="Empowerme Collective woman" title="Empowerme Collective woman"/>
+          <img
+            src="/images/women.png"
+            alt="EmpowerMe Collective woman"
+            decoding="async"
+            loading="lazy"
+            title="Empowerme Collective woman"
+            title="Empowerme Collective woman"
+          />
           <h3 class="font-bold font-hindmedium text-2xl my-4">
             Co-create a space to grow and connect.
           </h3>
@@ -115,7 +132,13 @@ Astro.response.headers.set(
           </p>
         </li>
         <li class="p-4">
-          <img src="/images/road.webp" alt="EmpowerMe Collective on the road" decoding="async" loading="lazy" title="Empowerme Collective road" />
+          <img
+            src="/images/road.webp"
+            alt="EmpowerMe Collective on the road"
+            decoding="async"
+            loading="lazy"
+            title="Empowerme Collective road"
+          />
           <h3 class="font-bold font-hindmedium text-2xl my-4">
             Align with your desired outcomes
           </h3>
@@ -275,16 +298,7 @@ Astro.response.headers.set(
       </article>
     </section>
 
-    
-
-<Testimonies />
-
-
-
-
-
-
-
+    <Testimonies />
 
     <section
       class="grid grid-flow-row md:grid-cols-2 gap-24 bg-primary md:p-24 p-8"
@@ -331,6 +345,14 @@ Astro.response.headers.set(
           <button class="btn-primary">Submit</button>
         </section>
       </section>
+    </section>
+
+    <section
+      class="flex flex-row items-center justify-center pb-16 bg-primary "
+    >
+      <p class="font-montserrat font-bold tracking-wide">
+        Want to learn more? <a href="mailto:connect@empowermecollective.com "  target="_blank" class="underline decoration-solid underline-offset-4"> Email us</a> or <a href="https://calendly.com/connect-4xra" target="_blank" class="underline decoration-solid underline-offset-4">book a 15-min chat</a>.
+      </p>
     </section>
 
     <section
