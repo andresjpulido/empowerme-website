@@ -73,13 +73,13 @@
   font-style: normal;
   font-display: swap;
 }
+ 
 
 @layer base {
   body{
      
     background-color: #F2F2F2;
-  }
-   
+  } 
    
   p{
     font-family: 'monserrat-regular', sans-serif;
