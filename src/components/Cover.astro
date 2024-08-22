@@ -43,11 +43,11 @@
     </div>
 
     <p
-      class="font-seaweedscript text-primary text-xl w-48"
-      style="margin-top: -12px;"
+      class="w-48 flex flex-row"
+      style="margin-top: -20px;"
     >
       <img src="/images/line.svg" alt="line" decoding="async" loading="lazy" />
-      Listen along while exploring our website
+      <span class="mt-12 font-licoriseregular text-primary text-2xl " > Listen along while exploring our website</span>
     </p>
   </div>
 </main>
@@ -61,7 +61,7 @@
 
   function handleClick() { 
     
-    const audioIconControl = document.getElementById("audioIconControl");
+    const audioIconControl:HTMLImageElement = document.getElementById("audioIconControl") as HTMLImageElement;
     let filename = audioIconControl!.src;
 
     if (filename.indexOf("audioOff") !== -1) {

@@ -53,8 +53,8 @@ export default {
       hindmedium:[
         "hindmedium"
       ],
-      seaweedscript:[
-        "seaweedscript"
+      licoriseregular:[
+        "licoriseregular"
       ]
     },
   },
