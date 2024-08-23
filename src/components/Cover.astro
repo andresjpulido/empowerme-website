@@ -5,18 +5,17 @@
 <main
   class="grid grid-flow-row md:grid-cols-2 items-center justify-center h-screen bg-[url('/images/cover-bg.webp')] bg-no-repeat bg-cover md:px-24 p-8 gap-6 md:gap-0"
 >
-
-<div class="md:hidden flex  mb-2 items-center gap-3 ">
-  <h1 class="flex flex-col">
-    <span
-      class="font-monserratbold font-bold text-lg bg-primary text-[#2D6873] pr-1"
-      >EMPOWER ME</span
-    >
-    <span class="font-monserrat font-light text-lg text-primary"
-      >COLLECTIVE</span
-    >
-  </h1>
-</div>
+  <div class="md:hidden flex mb-2 items-center gap-3">
+    <h1 class="flex flex-col">
+      <span
+        class="font-monserratbold font-bold text-lg bg-primary text-[#2D6873] pr-1"
+        >EMPOWER ME</span
+      >
+      <span class="font-monserrat font-light text-lg text-primary"
+        >COLLECTIVE</span
+      >
+    </h1>
+  </div>
 
   <div>
     <h1
@@ -24,9 +23,11 @@
     >
       Grow your business and live your life on your own terms!
     </h1>
-    <p class="my-4 md:my-8 text-primary text-lg md:text-xl">Rewrite your story and soar high.</p>
+    <p class="my-4 md:my-8 text-primary text-lg md:text-xl">
+      Rewrite your story and soar high.
+    </p>
     <div class="">
-      <button type="button" class="btn-secondary">Connect and grow</button>
+      <a href="https://forms.gle/dyYRrcgCU3TPL3tb8" target="_blank" class="btn-secondary">Connect and grow</a>
       <button type="button" class="btn-tertiary">Learn more</button>
     </div>
   </div>
@@ -35,6 +36,8 @@
     <div class="relative">
       <img
         src="/images/manu.webp"
+        decoding="async"
+        loading="lazy"
         alt="Manuela Klevisser"
         class="md:size-64 size-48 p-5 border-primary border-2 rounded-full"
         title="EmpowerMe Collective Manuela Klevisser"
@@ -55,12 +58,11 @@
       </div>
     </div>
 
-    <p
-      class="w-48 flex flex-row"
-      style="margin-top: -20px;"
-    >
+    <p class="w-48 flex flex-row" style="margin-top: -20px;">
       <img src="/images/line.svg" alt="line" decoding="async" loading="lazy" />
-      <span class="mt-12 font-licoriseregular text-primary text-2xl " > Listen along while exploring our website</span>
+      <span class="mt-12 font-licoriseregular text-primary text-2xl">
+        Listen along while exploring our website</span
+      >
     </p>
   </div>
 </main>
@@ -69,12 +71,12 @@
   const audio = document.createElement("audio");
   audio.setAttribute("src", "/audio/empowerMeCollective.mp3");
   //audio.playbackRate = 0.5;
-  audio.preload = "auto"
-   
+  audio.preload = "auto";
 
-  function handleClick() { 
-    
-    const audioIconControl:HTMLImageElement = document.getElementById("audioIconControl") as HTMLImageElement;
+  function handleClick() {
+    const audioIconControl: HTMLImageElement = document.getElementById(
+      "audioIconControl"
+    ) as HTMLImageElement;
     let filename = audioIconControl!.src;
 
     if (filename.indexOf("audioOff") !== -1) {
@@ -84,7 +86,6 @@
       audioIconControl!.src = "/images/audioOff.svg";
       audio.pause();
     }
- 
   }
 
   let audiocontrol = document.getElementById("audiobutton");
