@@ -17,9 +17,9 @@
     </h1>
   </div>
 
-  <div>
+  <div class="md:mt-24">
     <h1
-      class="font-montserratbold font-bold md:text-5xl text-3xl text-primary md:leading-normal"
+      class="font-montserratbold font-bold md:text-7xl text-3xl text-primary md:leading-none"
     >
       Grow your business and live your life on your own terms!
     </h1>
@@ -32,18 +32,18 @@
     </div>
   </div>
 
-  <div class="text-center flex flex-col justify-center items-center">
+  <div class="text-center flex flex-col justify-center items-center md:mt-24">
     <div class="relative">
       <img
         src="/images/manu.webp"
         decoding="async"
         loading="lazy"
         alt="Manuela Klevisser"
-        class="md:size-64 size-48 p-5 border-primary border-2 rounded-full"
+        class="md:size-96 size-48 p-5 border-primary border-2 rounded-full"
         title="EmpowerMe Collective Manuela Klevisser"
       />
       <div
-        class="absolute flex flex-row items-center justify-center right-12 bottom-6 rounded-full p-1 bg-[url('/images/gbbutton.png')] bg-cover bg-repeat"
+        class="absolute flex flex-row items-center justify-center md:right-20 md:bottom-10 right-12 bottom-6 rounded-full p-1 bg-[url('/images/gbbutton.png')] bg-cover bg-repeat"
       >
         <button id="audiobutton">
           <img
@@ -51,7 +51,7 @@
             alt="line"
             decoding="async"
             loading="lazy"
-            class="size-7"
+            class="size-7 md:size-10"
             id="audioIconControl"
           />
         </button>
@@ -69,7 +69,7 @@
 
 <script>
   const audio = document.createElement("audio");
-  audio.setAttribute("src", "/audio/empowerMeCollective.mp3");
+  audio.setAttribute("src", "/audio/empowerme-introduction.mp4");
   //audio.playbackRate = 0.5;
   audio.preload = "auto";
 

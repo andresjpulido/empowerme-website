@@ -98,16 +98,21 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-five text-primary border-primary border-2 hover:bg-[#3283ca] focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2 md:py-2.5 me-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
+    @apply bg-five text-primary border-five border-2 hover:border-five hover:bg-primary hover:text-five focus:ring-4 focus:ring-five font-medium 
+    rounded-md text-sm px-5 py-2 md:py-2.5 me-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none 
+    dark:focus:ring-five;
   }
   .btn-secondary {
-    @apply bg-primary text-five border-solid border-primary border-2 hover:bg-[#3283ca] hover:text-primary focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2 md:py-2.5 me-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
+    @apply bg-primary text-five border-solid border-primary border-2 hover:bg-five hover:text-primary hover:border-five
+    focus:ring-4 focus:ring-five font-medium rounded-md text-sm px-5 py-2 md:py-2.5 me-2 
+    dark:bg-blue-600 dark:hover:bg-five focus:outline-none dark:focus:ring-five;
   }
   .btn-tertiary {
-    @apply text-primary border-solid border-primary border-2 hover:bg-[#3283ca] hover:text-primary focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2 md:py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
+    @apply text-primary border-solid border-primary border-2 hover:bg-five hover:border-five hover:text-primary focus:ring-4
+     focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2 md:py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
   }
   .btn-fourth {
-    @apply text-tenth border-solid border-tenth border-2 hover:bg-[#3283ca] hover:text-primary focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2 md:py-2.5 me-2   dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
+    @apply text-tenth border-solid border-tenth border-2 hover:bg-tenth hover:text-primary focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2 md:py-2  me-2   dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
   }
   .icons {
     @apply text-white bg-[#355E82] fill-[#355E82];
@@ -116,7 +121,7 @@
     @apply text-[#355E82] bg-white fill-white;
   }
   .footer {
-    @apply grid grid-flow-row md:grid-cols-4 md:px-36 md:py-16 p-8  text-tenth bg-eleventh ;
+    @apply grid grid-flow-row md:grid-cols-4 gap-8 md:gap-0 md:px-24 md:py-16 p-8 py-16  text-tenth bg-eleventh text-sm;
   }
   .social-links {
     @apply flex flex-row justify-center gap-6;

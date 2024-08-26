@@ -1,42 +1,19 @@
----
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import Cover from "../components/Cover.astro";
-import Seo from "../components/Seo.astro";
-import siteData from "../data/siteData.json";
+--- 
+import Cover from "../components/Cover.astro"; 
 import QnA from "../components/QnA.astro";
-import Testimonies from "../components/Testimonies.astro";
-import "../base.css";
+import Testimonies from "../components/Testimonies.astro"; 
+import Layout from "../layouts/pages.astro"; 
 
-Astro.response.headers.set(
-  "Cache-Control",
-  "public, max-age=300, s-maxage=3600"
-);
----
+const urlaction = 'https://forms.gle/ZQjMxJnLpBqHjcBo8'
+--- 
 
-<!doctype html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <meta name="theme-color" content="var(--primary-color)" />
-    <link rel="icon" href="favicon.svg" />
-    <link rel="preload" href="/images/cover-bg.webp" as="image" />
-    <link rel="preload" href="/images/quote-bg.png" as="image" />
-    <link
-      rel="preload"
-      href="/fonts/Montserrat-Bold.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-
-    <title>{siteData.title}</title>
-    <Seo {siteData} />
-  </head>
-  <body>
-    <Header />
+<Layout
+  title="MasterClass"
+  description="Lorem ipsum dolor sit amet"
+  pubDate={new Date("August 08 2021")}
+  heroImage="/blog-placeholder-about.jpg"
+>
+ 
     <Cover />
 
     <section
@@ -51,7 +28,7 @@ Astro.response.headers.set(
         becoming the version of ourselves most aligned with our desired
         outcomes.
       </p>
-      <a href="https://forms.gle/dyYRrcgCU3TPL3tb8" target="_blank" class="btn-primary">Connect and grow</a>
+      <a href={urlaction} target="_blank" class="btn-primary">Connect and grow</a>
     </section>
 
     <section
@@ -77,7 +54,7 @@ Astro.response.headers.set(
           succeed on our own terms. Through real conversations, shared learnings
           and addressing the stories we tell ourselves, we grow ourselves and
           our desired garden.
-        </p><a href="https://forms.gle/dyYRrcgCU3TPL3tb8" target="_blank" class="btn-secondary">Connect and grow</a
+        </p><a href={urlaction} target="_blank" class="btn-secondary">Connect and grow</a
         >
       </section>
     </section>
@@ -95,8 +72,7 @@ Astro.response.headers.set(
             alt="EmpowerMe Collective woman"
             decoding="async"
             loading="lazy"
-            title="Empowerme Collective woman"
-            title="Empowerme Collective woman"
+            title="Empowerme Collective woman" 
           />
           <h3 class="font-bold font-hindmedium text-2xl my-4">
             Co-create a space to grow and connect.
@@ -160,7 +136,7 @@ Astro.response.headers.set(
         </li>
       </ul>
       <div class="flex flex-col items-center">
-        <a href="https://forms.gle/dyYRrcgCU3TPL3tb8" target="_blank" class="btn-primary">Start your journey</a>
+        <a href={urlaction} target="_blank" class="btn-primary">Start your journey</a>
       </div>
     </section>
 
@@ -281,7 +257,7 @@ Astro.response.headers.set(
             and accountability to help you achieve your goals and accelerate
             your journey.
           </p>
-          <button class="btn-secondary">Find out more</button>
+          <a href="/collective" class="btn-secondary">Find out more</a>
         </section>
         <section class="text-primary bg-tenth rounded-md p-4" id="masterclass">
           <img
@@ -304,7 +280,7 @@ Astro.response.headers.set(
             plans and then learn how to leverage the transformational power of
             habits to aligned yourself with your goals.
           </p>
-          <button class="btn-secondary">Explore the Masterclass</button>
+          <a href="/masterclass" class="btn-secondary">Explore the Masterclass</a>
         </section>
         <section class="text-primary bg-tenth rounded-md p-4">
           <img
@@ -429,13 +405,13 @@ Astro.response.headers.set(
     </section>
 
     <section
-      class="bg-[url('/images/shadows.png')] bg-no-repeat bg-cover h-[670px] relative"
+      class="bg-[url('/images/shadows.png')] bg-no-repeat bg-cover h-[670px] relative" 
     >
       <article
         class="text-five md:w-2/5 md:m-16 m-4 p-8 px-12 bg-primary/30 backdrop-blur-sm absolute"
-      >
+       >
         <h2 class="font-montserratbold font-bold text-4xl">Our Vision</h2>
-        <p class="font-hindlight mt-8">
+        <p class="font-hindlight mt-8"  id="vision">
           Empowering the Collective to live life at our own terms, embracing the
           abundance, love and happiness life has to offer!
         </p>
@@ -444,6 +420,4 @@ Astro.response.headers.set(
 
     <QnA />
 
-    <Footer />
-  </body>
-</html>
+  </Layout>
