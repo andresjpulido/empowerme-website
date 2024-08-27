@@ -4,28 +4,39 @@ import Layout from "../layouts/pages.astro";
 
 <Layout
   title="EmpowerMe Collective | MasterClass"
-  description="A Masterclass showing you the path to becoming the version of yourself
-      aligned with your desired outcomes."
+  description="A Masterclass showing you the path to becoming the version of yourself  aligned with your desired outcomes."
   pubDate={new Date("August 08 2021")}
   heroImage="/blog-placeholder-about.jpg"
 >
   <header
-    class="flex flex-col justify-center items-center text-primary bg-[url('/images/quote2-bg.png')] bg-no-repeat bg-cover p-16"
+    class="flex flex-col justify-center items-center text-tenth bg-[url('/images/masterclass-bg.webp')] bg-no-repeat bg-cover md:p-16"
   >
-    <h1 class="font-montserratbold font-bold text-5xl md:pt-32 text-center">
-      LET’S LEAD LIFE AT OUR OWN TERMS
-    </h1>
-    <p class="md:px-32 py-8 text-center">
-      A Masterclass showing you the path to becoming the version of yourself
-      aligned with your desired outcomes.
-    </p>
-    <button class="btn-tertiary">Learn more</button>
+    <section
+      class="flex flex-col md:m-24 md:p-12 bg-primary/30 backdrop-blur-md rounded-md"
+    >
+      <h1
+        class="font-montserratbold font-bold text-3xl md:text-5xl px-4 md:px-36 text-center md:leading-normal"
+      >
+        Let's lead life at our own terms
+      </h1>
+      <p class="md:px-24 py-8 text-center text-xl md:text-3xl leading-normal">
+        A Masterclass showing you the path to becoming the version of yourself
+        aligned with your desired outcomes.
+      </p>
+      <p class="mx-auto text-center">
+        <a
+          href="https://forms.gle/dyYRrcgCU3TPL3tb8"
+          target="_blank"
+          class="btn-tertiary mx-auto">JOIN THE WAITING LIST</a
+        >
+      </p>
+    </section>
   </header>
 
   <section
-    class="grid grid-flow-row md:grid-cols-2 md:p-16 p-8 gap-2 items-center justify-items-center bg-primary text-five"
+    class="grid grid-flow-row md:grid-cols-2 md:px-48 md:py-24 p-8 gap-4 md:gap-36 items-center justify-center bg-tenth text-primary"
   >
-    <section class="md:px-8">
+    <section>
       <p class="font-hindlight pb-4 leading-loose">
         The EmpowerMe Masterclass is taking participants through a journey to
         identify some of the inner blocks and making those invisible stories
@@ -33,7 +44,8 @@ import Layout from "../layouts/pages.astro";
         become the version of ourselves that will take participants to their
         desired outcomes.
       </p>
-
+    </section>
+    <section>
       <p class="font-hindlight pb-4 leading-loose">
         Habits hold immense power for they can change the way we see ourselves.
         And if we change how we view ourselves, we change what we believe is
@@ -45,16 +57,13 @@ import Layout from "../layouts/pages.astro";
         of our lives. It doesn’t give you the fish but teaches you how to fish!
       </p>
     </section>
-    <section>
-      <img src="/images/sketchbook.png" alt="" />
-    </section>
   </section>
 
   <section
     class="grid grid-flow-row md:grid-cols-2 md:p-16 p-8 gap-2 items-center justify-items-center bg-primary text-five"
   >
     <section>
-      <img src="/images/sketchbook.png" alt="" />
+      <img src="/images/laptop-coffee.png" alt="" />
     </section>
     <section class="md:px-8">
       <h2 class="font-montserratbold font-bold text-4xl mb-6">
@@ -71,55 +80,66 @@ import Layout from "../layouts/pages.astro";
         grow, expand and support others to do the same.
       </p>
 
-      <button>JOIN THE WAITING LIST</button>
+      <p class="py-4">
+        <a
+          href="https://forms.gle/dyYRrcgCU3TPL3tb8"
+          target="_blank"
+          class="btn-primary mx-auto">JOIN THE WAITING LIST</a
+        >
+      </p>
     </section>
   </section>
 
   <section
-    class="flex flex-col justify-center items-center text-secondary bg-[url('/images/quote2-bg.png')] bg-no-repeat bg-cover p-8 md:p-24"
+    class="flex flex-col justify-center items-center text-primary bg-[url('/images/usecase.jpeg')] bg-no-repeat bg-cover p-8 md:p-36"
   >
-    <h2 class="font-montserratbold font-bold text-4xl mb-6">
-      CASE STUDY or FEEDBACK I AM PARTICULARLY PROUD OF
-    </h2>
-    <p class="font-hindlight pb-4 leading-loose">
-      When I first created the course “The Transformation power of habits”, I
-      shared it with my sister. I did so because she was in the process of
-      writing her third book ( please note, the process is transferable to any
-      challenging area in our lives). She was complaining on how stretched she
-      was with her busy schedule and as a result procrastinating on her writing.
-      This led her to feel super stressed as the looming deadline was putting
-      her under immense pressure yet still continuing to procrastinate and
-      self-sabotaging herself.
-    </p>
-    <p class="font-hindlight pb-4 leading-loose">
-      My beautiful sister took the formula shared in this masterclass and boom,
-      she published an incredible book in record time and said:
-    </p>
-    <p class="font-hindlight pb-4 leading-loose">
-      “I've always found it difficult to develop a routine, and I've viewed my
-      life as a "creative mess." At the end of the day, when I had a deadline,
-      I'd always find a way to finish my piece on time and it would be well
-      done. However, this always occurred at the last minute, leaving me
-      completely exhausted and drained. I often wondered why was I doing that to
-      me and how to change it. [...]
-    </p>
-    <p class="font-hindlight pb-16 leading-loose">
-      It was mind blowing for me to realise how fast we can change and how less
-      stressful my life can become. I've started to use the hacks I learned for
-      everything and the results are phenomenal. I genuinely adore this course
-      and highly recommend it!”
-    </p>
-    <img src="images/flower.webp" alt="" class="rounded-full size-48" />
+    <article>
+      <h2 class="font-montserratbold font-bold text-4xl mb-6 text-primary">
+        CASE STUDY or FEEDBACK I AM PARTICULARLY PROUD OF
+      </h2>
+      <p class="font-hindlight pb-4 leading-loose">
+        When I first created the course “The Transformation power of habits”, I
+        shared it with my sister. I did so because she was in the process of
+        writing her third book ( please note, the process is transferable to any
+        challenging area in our lives). She was complaining on how stretched she
+        was with her busy schedule and as a result procrastinating on her
+        writing. This led her to feel super stressed as the looming deadline was
+        putting her under immense pressure yet still continuing to procrastinate
+        and self-sabotaging herself.
+      </p>
+      <p class="font-hindlight pb-4 leading-loose">
+        My beautiful sister took the formula shared in this masterclass and
+        boom, she published an incredible book in record time and said:
+      </p>
+      <p class="font-hindlight pb-4 leading-loose">
+        “I've always found it difficult to develop a routine, and I've viewed my
+        life as a "creative mess." At the end of the day, when I had a deadline,
+        I'd always find a way to finish my piece on time and it would be well
+        done. However, this always occurred at the last minute, leaving me
+        completely exhausted and drained. I often wondered why was I doing that
+        to me and how to change it. [...]
+      </p>
+      <p class="font-hindlight pb-16 leading-loose">
+        It was mind blowing for me to realise how fast we can change and how
+        less stressful my life can become. I've started to use the hacks I
+        learned for everything and the results are phenomenal. I genuinely adore
+        this course and highly recommend it!”
+      </p>
+      <p class="  ">
+        <img src="images/Florinda.png" alt="" class="rounded-full size-48 mx-auto" />
+      </p>
+      <p class="text-center pt-8">Florinda</p>
+    </article>
   </section>
 
   <section
-    class="flex flex-col items-center justify-center p-8 md:p-24 bg-primary text-five"
+    class=" p-8 md:p-24 bg-primary text-five"
   >
     <h2 class="font-montserratbold font-bold text-4xl mb-6">
-      In the EmpowerMe Masterclass participants will:
+      In the EmpowerMe Masterclass you will:
     </h2>
 
-    <ul class="font-hindlight mb-4 md:pl-6 leading-8 list-none">
+    <ul class="grid grid-flow-row grid-cols-2 gap-8 font-hindlight my-4 md:pl-6 leading-8 list-none">
       <li class="flex flex-row items-top gap-2">
         <div>
           <img
@@ -177,9 +197,9 @@ import Layout from "../layouts/pages.astro";
   </section>
 
   <section
-    class="grid grid-flow-row md:grid-cols-2 md:p-16 p-8 gap-2 items-center justify-items-center bg-primary text-five"
+    class="flex flex-row flex-wrap items-center justify-items-center bg-[#0291A9]"
   >
-    <section class="md:px-8">
+    <section class="p-8 md:p-24 md:py-16  text-primary">
       <h2 class="font-montserratbold font-bold text-4xl mb-6">HOW TO JOIN?</h2>
       <p class="font-hindlight pb-4 leading-loose">
         Whether you want to join as an individual or you’d like to organise the
@@ -188,10 +208,16 @@ import Layout from "../layouts/pages.astro";
         and further connect.
       </p>
 
-      <button>JOIN WAITING LIST NOW</button>
+      <p class="py-4">
+        <a
+          href="https://forms.gle/dyYRrcgCU3TPL3tb8"
+          target="_blank"
+          class="btn-secondary mx-auto">JOIN THE WAITING LIST</a
+        >
+      </p>
     </section>
     <section>
-      <img src="/images/sketchbook.png" alt="" />
+      <img src="/images/office.jpeg" alt="" />
     </section>
   </section>
 </Layout>

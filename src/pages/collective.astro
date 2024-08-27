@@ -9,18 +9,18 @@ import Layout from "../layouts/pages.astro";
   heroImage="/blog-placeholder-about.jpg"
 >
   <header
-    class="flex flex-col justify-center items-center text-primary bg-[url('/images/collective.jpg')] bg-no-repeat bg-cover p-16"
+    class="flex flex-col justify-center items-center text-primary bg-[url('/images/collective.jpg')] bg-no-repeat bg-cover md:p-16"
   >
     <section
       class="flex flex-col md:m-24 md:p-12 bg-primary/30 backdrop-blur-md rounded-md"
-    >
+    > 
       <h1
-        class="font-montserratbold font-bold text-3xl md:text-5xl text-center text-tenth px-48"
+        class="font-montserratbold font-bold text-3xl md:text-5xl text-center text-tenth md:px-36 md:leading-relaxed"
       >
         Growing your business and a life you love!
       </h1>
       <p
-        class="md:px-32 py-8 text-center text-3xl text-tenth font-monserrat leading-relaxed"
+        class="md:px-32 py-8 text-center text-xl md:text-3xl text-tenth font-monserrat leading-normal"
       >
         A Collective on the same journey sharing, learning, growing together
       </p>
@@ -33,9 +33,9 @@ import Layout from "../layouts/pages.astro";
     </section>
   </header>
 
-  <section class="flex flex-col items-center justify-center bg-primary p-16">
+  <section class="flex flex-col items-center justify-center bg-primary p-4 md:p-16">
     <section
-      class="grid grid-flow-row md:grid-cols-2 font-light gap-12 w-full text-five md:w-2/4"
+      class="grid grid-flow-row md:grid-cols-2 font-light md:gap-12 w-full text-five md:w-2/4"
     >
       <p class="flex flex-row font-hindlight pb-4 leading-relaxed text-tenth">
         The choices we make and the path we create for ourselves are heavily
@@ -55,8 +55,8 @@ import Layout from "../layouts/pages.astro";
     </section>
   </section>
 
-  <section class="bg-gradient-to-b from-[#59A9BF] to-secondary p-24">
-    <section class="flex flex-row gap-8 items-center justify-center">
+  <section class="bg-gradient-to-b from-[#59A9BF] to-secondary p-4 md:p-24">
+    <section class="flex flex-row flex-wrap gap-8 items-center justify-center">
       <section class="">
         <img src="/images/women.png" alt="" class="max-w-fit" />
       </section>
@@ -97,7 +97,7 @@ import Layout from "../layouts/pages.astro";
       we've extrapolated that part without the significant financial or time
       commitment and brought in only benefits.
     </p>
-    <ul class="grid grid-row md:grid-cols-3 gap-16">
+    <ul class="grid grid-row md:grid-cols-3 md:gap-16">
       <li>
         <h3 class="font-montserratbold font-bold text-2xl mb-4">
           Co-creation
@@ -165,7 +165,7 @@ import Layout from "../layouts/pages.astro";
     class="flex flex-col justify-center items-center text-primary bg-secondary p-8 md:p-24"
   >
     <p
-      class="font-montserrat font-bold text-2xl mb-4 mx-24 leading-loose text-center"
+      class="font-montserrat font-bold text-2xl mb-4 md:mx-24 md:leading-loose text-center"
     >
       Manu understands the balance between accomplishing our professional goals
       while maintaining time for emotional, social, physical and spiritual
@@ -188,12 +188,12 @@ import Layout from "../layouts/pages.astro";
   </section>
 
   <section>
-    <h2 class="font-hindlight px-28 mt-16 leading-loose text-tenth">
+    <h2 class="font-hindlight px-4 md:px-28 mt-16 leading-loose text-tenth">
       Besides having great conversations, you will:
     </h2>
 
     <section class="py-8">
-      <ul class="grid grid-flow-row grid-cols-3 gap-8 px-16">
+      <ul class="grid grid-flow-row md:grid-cols-3 gap-8 px-16">
         <li>
           <img src="/images/flowershadow.jpeg" alt="" class="" />
           <h3 class="pt-4 text-2xl text-tenth">Identify your Blocks</h3>
@@ -225,7 +225,7 @@ import Layout from "../layouts/pages.astro";
   <section
     class="bg-[url(/images/quota-bg-join.jpeg)] bg-no-repeat bg-cover text-five pb-8"
   >
-    <section class="flex flex-row md:px-36 md:py-12 p-8 gap-16 items-center justify-items-center ">
+    <section class="flex flex-row flex-wrap md:px-36 md:py-12 p-8 md:gap-16 items-center justify-items-center ">
       <article class="md:p-24 bg-primary/30 backdrop-blur-sm">
         <h2 class="font-montserratbold font-bold text-4xl mb-4">
           HOW TO JOIN?
