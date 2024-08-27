@@ -3,29 +3,41 @@ import Layout from "../layouts/pages.astro";
 ---
 
 <Layout
-  title="MasterClass"
-  description="Lorem ipsum dolor sit amet"
+  title="EmpowerMe Collective | Collective"
+  description="A Collective on the same journey sharing, learning, growing togethero becoming the version of yourself aligned with your desired outcomes."
   pubDate={new Date("August 08 2021")}
   heroImage="/blog-placeholder-about.jpg"
 >
   <header
-    class="flex flex-col justify-center items-center text-primary bg-[url('/images/quote2-bg.png')] bg-no-repeat bg-cover p-16"
+    class="flex flex-col justify-center items-center text-primary bg-[url('/images/collective.jpg')] bg-no-repeat bg-cover p-16"
   >
-    <h1 class="font-montserratbold font-bold text-3xl md:text-5xl md:pt-32 text-center">
-      GROWING OUR OWN BUSINESS (cross) GARDEN AND A LIFE WE LOVE
-    </h1>
-    <p class="md:px-32 py-8 text-center ">
-      A Collective on the same journey sharing, learning, growing togethero
-      becoming the version of yourself aligned with your desired outcomes.
-    </p>
-    <button class="btn-tertiary">JOIN THE WAITING LIST</button>
+    <section
+      class="flex flex-col md:m-24 md:p-12 bg-primary/30 backdrop-blur-md rounded-md"
+    >
+      <h1
+        class="font-montserratbold font-bold text-3xl md:text-5xl text-center text-tenth px-48"
+      >
+        Growing your business and a life you love!
+      </h1>
+      <p
+        class="md:px-32 py-8 text-center text-3xl text-tenth font-monserrat leading-relaxed"
+      >
+        A Collective on the same journey sharing, learning, growing together
+      </p>
+
+      <a
+        href="https://forms.gle/dyYRrcgCU3TPL3tb8"
+        target="_blank"
+        class="btn-tertiary mx-auto">JOIN THE WAITING LIST</a
+      >
+    </section>
   </header>
 
-  <section
-    class="grid grid-flow-row md:grid-cols-2 md:p-16 p-8 gap-2 items-center justify-items-center bg-primary text-five"
-  >
-    <section class="md:px-8">
-      <p class="font-hindlight pb-4 leading-loose">
+  <section class="flex flex-col items-center justify-center bg-primary p-16">
+    <section
+      class="grid grid-flow-row md:grid-cols-2 font-light gap-12 w-full text-five md:w-2/4"
+    >
+      <p class="flex flex-row font-hindlight pb-4 leading-relaxed text-tenth">
         The choices we make and the path we create for ourselves are heavily
         influenced by the environment we come from, which also dictates our
         beliefs and the self-limitations we impose on ourselves. The ‘stories we
@@ -33,7 +45,7 @@ import Layout from "../layouts/pages.astro";
         authentic selves and hinder our progress making us play small.
       </p>
 
-      <p class="font-hindlight pb-4 leading-loose">
+      <p class="font-hindlight pb-4 leading-relaxed text-tenth">
         The EmpowerMe Garden bring the collective together to identify some of
         the inner blocks that have been holding them back in starting/running a
         successful business and making those invisible stories visible. It then
@@ -41,40 +53,55 @@ import Layout from "../layouts/pages.astro";
         ourselves that will take participants to their desired outcomes.
       </p>
     </section>
-    <section>
-      <img src="/images/sketchbook.png" alt="" />
-    </section>
   </section>
 
-  <section
-    class="flex flex-col justify-center items-center text-secondary bg-[url('/images/quote2-bg.png')] bg-no-repeat bg-cover p-8 md:p-24"
-  >
-    <p class="font-montserratbold font-bold text-2xl mb-4 leading-loose">
-      “Definitely, the support has an amazing impact. [...] People around you
-      invest in you and say I support your idea [...] It's I don't know a
-      mixture of 'they trust me that I can do this!' So, the support is
-      encouragement and also a nice push behind you :)
-    </p>
-    <p class=" mb-8">- Sevgi Ikinci</p>
+  <section class="bg-gradient-to-b from-[#59A9BF] to-secondary p-24">
+    <section class="flex flex-row gap-8 items-center justify-center">
+      <section class="">
+        <img src="/images/women.png" alt="" class="max-w-fit" />
+      </section>
 
-    <img src="images/flower.webp" alt="" class="rounded-full size-48" />
+      <section class="text-primary">
+        <h2 class="font-montserratbold text-3xl pb-4">
+          Why EMPOWER ME Collective?
+        </h2>
+        <p class="font-hindlight pb-4">
+          For the simple desire for deeper conversations and really connecting
+          with a tribe that is on the same journey! The additional perk to it is
+          developing a growth mindset that will help us be better people, run
+          better businesses and live better lives.
+        </p><p class="font-hindlight pb-8">
+          Our inner blocks play a part in the way we are and what we do (or
+          don’t do), and therefore the way we run our business. It can influence
+          the decisions we make and play a major part in the consistency or
+          inconsistencies of our income levels, fast-tracking or slowing our
+          business growth, shaping our efficiency and use of resources or time
+          management.
+        </p>
+        <a
+          href="https://forms.gle/dyYRrcgCU3TPL3tb8"
+          target="_blank"
+          class="btn-tertiary mx-auto">JOIN THE WAITING LIST</a
+        >
+      </section>
+    </section>
   </section>
 
   <section class="p-8 md:p-24 bg-primary text-five">
     <h2 class="font-montserratbold font-bold text-4xl mb-6">
       ABOUT EMPOWER ME GARDEN
     </h2>
-    <p class="font-hindlight pb-8 leading-loose">
+    <p class="font-hindlight pb-8">
       The best part of any coaching is the tribe of fellow travellers you meet,
       the deep conversations you have and the strong connections you make. Here
       we've extrapolated that part without the significant financial or time
       commitment and brought in only benefits.
     </p>
-    <ul class="grid grid-row md:grid-cols-3 gap-6">
+    <ul class="grid grid-row md:grid-cols-3 gap-16">
       <li>
-        <h3 class="font-montserratbold font-bold text-3xl mb-4">
+        <h3 class="font-montserratbold font-bold text-2xl mb-4">
           Co-creation
-        </h3><p class="font-hindlight pb-4 leading-loose">
+        </h3><p class="font-hindlight pb-4">
           We are in it together - no one person is dictating the way! The
           Collective shapes each session for our own voice and experience are
           our unique contributions. Together we bring the various pieces of the
@@ -82,18 +109,18 @@ import Layout from "../layouts/pages.astro";
         </p>
       </li>
       <li>
-        <h3 class="font-montserratbold font-bold text-3xl mb-4">
+        <h3 class="font-montserratbold font-bold text-2xl mb-4">
           Deep conversations
-        </h3><p class="font-hindlight pb-4 leading-loose">
+        </h3><p class="font-hindlight pb-4">
           Are you tired of small talk? Then this is the place for you. In the
           EmpowerMe Garden we thrive by sharing perspectives, learnings,
           approaches and solultions. We go Further Faster otgether!
         </p>
       </li>
       <li>
-        <h3 class="font-montserratbold font-bold text-3xl mb-4">
+        <h3 class="font-montserratbold font-bold text-2xl mb-4">
           Make the invisible visible
-        </h3><p class="font-hindlight pb-4 leading-loose">
+        </h3><p class="font-hindlight pb-4">
           The ‘stories we tell ourselves’ offer beliefs that can mask our true
           potential and authentic selves and hinder our progress making us play
           small. We bring these insidious stories visible and work on releasing
@@ -101,9 +128,9 @@ import Layout from "../layouts/pages.astro";
         </p>
       </li>
       <li>
-        <h3 class="font-montserratbold font-bold text-3xl mb-4">
-          Relatable role models us(the collective)!
-        </h3><p class="font-hindlight pb-4 leading-loose">
+        <h3 class="font-montserratbold font-bold text-2xl mb-4">
+          Relatable role models us (the Collective)!
+        </h3><p class="font-hindlight pb-4">
           When a story comes from people I can relate to, it lands way more
           strongly. Suddenly it is not something that an incredible coach did or
           said to do, making me question whether I have it in me...and possible
@@ -111,9 +138,9 @@ import Layout from "../layouts/pages.astro";
         </p>
       </li>
       <li>
-        <h3 class="font-montserratbold font-bold text-3xl mb-4">
+        <h3 class="font-montserratbold font-bold text-2xl mb-4">
           Sense of belonging and accountability
-        </h3><p class="font-hindlight pb-4 leading-loose">
+        </h3><p class="font-hindlight pb-4">
           Each session is taking us one step closer to leading our life at our
           own terms. Through reflections, tools and resources we’ll empower the
           version of ourselves that is aligned with our desired outcomes. An
@@ -121,9 +148,9 @@ import Layout from "../layouts/pages.astro";
         </p>
       </li>
       <li>
-        <h3 class="font-montserratbold font-bold text-3xl mb-4">
+        <h3 class="font-montserratbold font-bold text-2xl mb-4">
           Feeling heard
-        </h3><p class="font-hindlight pb-4 leading-loose">
+        </h3><p class="font-hindlight pb-4">
           Do you feel sometimes like a lonely worl? Do you feel that your loved
           ones are just on a different path or phase in life and not getting
           your struggles, challenges and stories? Well, you’re not alone. This
@@ -132,52 +159,113 @@ import Layout from "../layouts/pages.astro";
         </p>
       </li>
     </ul>
-    <p class="font-hindlight pb-4 leading-loose">
-      Besides having great conversations, you will:
-    </p>
-    <ul>
-      <li>
-        <p class="font-hindlight pb-4 leading-loose">
-          Identify your Blocks: Explore inner blocks connected to specific
-          business challenges such as pricing, procrastination etc.
-        </p>
-      </li>
-      <li>
-        <p class="font-hindlight pb-4 leading-loose">
-          Explore EmpowerMe Habits: Identify habits that will bring up the
-          version of yourself aligned with overcoming the discussed challenge
-          using a set of strategies most aligned and applicable.
-        </p>
-      </li>
-      <li>
-        <p class="font-hindlight pb-4 leading-loose">
-          Have a supportive accountability group to support you and be part of a
-          curated environment that makes those habits stick more easily.
-        </p>
-      </li>
-    </ul>
   </section>
 
   <section
-    class="grid grid-flow-row md:grid-cols-2 md:p-16 p-8 gap-2 items-center justify-items-center bg-primary text-five"
+    class="flex flex-col justify-center items-center text-primary bg-secondary p-8 md:p-24"
   >
-    <section class="md:px-8">
-      <h2 class="font-montserratbold font-bold text-4xl mb-4">HOW TO JOIN?</h2>
-      <p class="font-hindlight pb-6 leading-loose">
-        The first steps is to register in the waiting list. By answering few
-        simple questions, we will be able to match you with the best upcoming
-        series of meetings (cross) EmpowerMe Gardens. This will define the stage
-        you’re in as well as some logistical questions such as frequency or
-        location/online.
-      </p>
-      <p class="font-hindlight pb-6">
-        Each session will focus around a micro-learning or better said a flower
-        we will plant together in our gardens!
-      </p>
-      <button>JOIN WAITING LIST NOW</button>
+    <p
+      class="font-montserrat font-bold text-2xl mb-4 mx-24 leading-loose text-center"
+    >
+      Manu understands the balance between accomplishing our professional goals
+      while maintaining time for emotional, social, physical and spiritual
+      wellness - so often overlooked in traditional patriarchal approaches to
+      success."
+    </p>
+    <div class="flex flex-col items-center mt-6 gap-4">
+      <div>
+        <img
+          src="/images/jontel.jpg"
+          alt="EmpowerMe Collective - Sevgi"
+          class="rounded-full size-16"
+          decoding="async"
+          loading="lazy"
+          title="EmpowerMe Collective testimonies - Sevgi"
+        />
+      </div>
+      <div class="font-montserrat">Jontel</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="font-hindlight px-28 mt-16 leading-loose text-tenth">
+      Besides having great conversations, you will:
+    </h2>
+
+    <section class="py-8">
+      <ul class="grid grid-flow-row grid-cols-3 gap-8 px-16">
+        <li>
+          <img src="/images/flowershadow.jpeg" alt="" class="" />
+          <h3 class="pt-4 text-2xl text-tenth">Identify your Blocks</h3>
+          <p class="font-hindlight py-4 leading-loose text-tenth">
+            Explore inner blocks connected to specific business challenges such
+            as pricing, procrastination impostor syndrome etc.
+          </p>
+        </li>
+        <li>
+          <img src="/images/smile-woman.jpeg" alt="" />
+          <h3 class="pt-4 text-2xl text-tenth">Form EmpowerMe Habits</h3>
+          <p class="font-hindlight py-4 leading-loose text-tenth">
+            Identify habits that will bring up the version of yourself aligned
+            with your desired outcomes and smash those inner blocks!
+          </p>
+        </li>
+        <li>
+          <img src="/images/conversation-women.jpeg" alt="" />
+          <h3 class="pt-4 text-2xl text-tenth">The Power of the Collective</h3>
+          <p class="font-hindlight py-4 leading-loose text-tenth">
+            Have a supportive accountability group to support you and be part of
+            a curated environment that makes those habits stick more easily.
+          </p>
+        </li>
+      </ul>
     </section>
-    <section>
-      <img src="/images/sketchbook.png" alt="" />
+  </section>
+
+  <section
+    class="bg-[url(/images/quota-bg-join.jpeg)] bg-no-repeat bg-cover text-five pb-8"
+  >
+    <section class="flex flex-row md:px-36 md:py-12 p-8 gap-16 items-center justify-items-center ">
+      <article class="md:p-24 bg-primary/30 backdrop-blur-sm">
+        <h2 class="font-montserratbold font-bold text-4xl mb-4">
+          HOW TO JOIN?
+        </h2>
+        <p class="font-hindlight pb-6 leading-loose">
+          The first steps is to register in the waiting list. By answering few
+          simple questions, we will be able to match you with the best upcoming
+          series of meetings (cross) EmpowerMe Gardens. This will define the
+          stage you’re in as well as some logistical questions such as frequency
+          or location/online.
+        </p>
+        <p class="font-hindlight pb-6">
+          Each session will focus around a micro-learning or better said a
+          flower we will plant together in our gardens!
+        </p>
+        <a
+          href="https://forms.gle/dyYRrcgCU3TPL3tb8"
+          target="_blank"
+          class="btn-primary mx-auto">JOIN THE WAITING LIST</a
+        >
+      </article>
+      <section>
+        <img src="/images/reading.png" alt="" class="" />
+      </section>
+    </section>
+    <section class="flex flex-row items-center justify-center text-secondary">
+      <p class="font-montserrat font-bold tracking-wide text-center">
+        Want to learn more? <a
+          href="mailto:connect@empowermecollective.com "
+          target="_blank"
+          class="underline decoration-solid underline-offset-4"
+        >
+          Email us</a
+        > or <a
+          href="https://calendly.com/connect-4xra"
+          target="_blank"
+          class="underline decoration-solid underline-offset-4"
+          >book a 15-min chat</a
+        >.
+      </p>
     </section>
   </section>
 </Layout>
