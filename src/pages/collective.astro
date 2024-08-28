@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/pages.astro";
+import QnACollection from "../components/QnACollection.astro";
 ---
 
 <Layout
@@ -13,14 +14,14 @@ import Layout from "../layouts/pages.astro";
   >
     <section
       class="flex flex-col p-4 md:m-24 md:p-12 bg-primary/30 backdrop-blur-md rounded-md"
-    > 
+    >
       <h1
-        class="font-montserratbold font-bold text-3xl md:text-5xl text-center text-tenth md:px-36 md:leading-relaxed"
+        class="font-montserratbold font-bold text-3xl md:text-5xl text-center text-tenth md:px-36 md:leading-snug"
       >
         Growing your business and a life you love!
       </h1>
       <p
-        class="md:px-32 py-8 text-center text-xl md:text-3xl text-tenth font-monserrat leading-normal"
+        class="md:px-32 py-8 text-center text-xl md:text-2xl text-tenth font-monserrat leading-normal"
       >
         A Collective on the same journey sharing, learning, growing together
       </p>
@@ -33,7 +34,9 @@ import Layout from "../layouts/pages.astro";
     </section>
   </header>
 
-  <section class="flex flex-col items-center justify-center bg-primary p-4 md:p-16">
+  <section
+    class="flex flex-col items-center justify-center bg-primary p-4 md:p-16"
+  >
     <section
       class="grid grid-flow-row md:grid-cols-2 font-light md:gap-12 w-full text-five md:w-2/4"
     >
@@ -55,28 +58,23 @@ import Layout from "../layouts/pages.astro";
     </section>
   </section>
 
-  <section class="bg-gradient-to-b from-[#59A9BF] to-secondary p-4 md:p-24">
-    <section class="flex flex-row flex-wrap gap-8 items-center justify-center">
+  <section class="bg-gradient-to-b from-[#59A9BF] to-secondary p-4 md:py-36 md:px-48">
+    <section
+      class="grid grid-flow-row md:grid-cols-2 gap-8 items-center justify-center"
+    >
       <section class="">
-        <img src="/images/women.png" alt="" class="max-w-fit" />
+        <img src="/images/women.png" alt="" class="size-5/6 mx-auto" />
       </section>
 
       <section class="text-primary">
-        <h2 class="font-montserratbold text-3xl pb-4">
-          Why EMPOWER ME Collective?
+        <h2 class="font-montserratbold text-4xl pb-4">
+          Why the Collective?
         </h2>
         <p class="font-hindlight pb-4">
-          For the simple desire for deeper conversations and really connecting
-          with a tribe that is on the same journey! The additional perk to it is
-          developing a growth mindset that will help us be better people, run
-          better businesses and live better lives.
+          For the simple desire for real conversations and  connecting with fellow entrepreneurs that are on the same journey!
+          Strengthening a growth mindset will help us be better people, run better businesses and live better lives.
         </p><p class="font-hindlight pb-8">
-          Our inner blocks play a part in the way we are and what we do (or
-          don’t do), and therefore the way we run our business. It can influence
-          the decisions we make and play a major part in the consistency or
-          inconsistencies of our income levels, fast-tracking or slowing our
-          business growth, shaping our efficiency and use of resources or time
-          management.
+          Your inner blocks play a part in the way you are and what you do (or don’t do), and therefore the way you run your business. It can influence the decisions you make  and play a major part in the consistency or inconsistencies of your income levels, fast-tracking or slowing your business growth, shaping your efficiency and use of resources and time. 
         </p>
         <a
           href="https://forms.gle/dyYRrcgCU3TPL3tb8"
@@ -89,7 +87,7 @@ import Layout from "../layouts/pages.astro";
 
   <section class="p-8 md:p-24 bg-primary text-five">
     <h2 class="font-montserratbold font-bold text-4xl mb-6">
-      ABOUT EMPOWER ME GARDEN
+      About the EmpowerMe Collective
     </h2>
     <p class="font-hindlight pb-8">
       The best part of any coaching is the tribe of fellow travellers you meet,
@@ -113,7 +111,7 @@ import Layout from "../layouts/pages.astro";
           Deep conversations
         </h3><p class="font-hindlight pb-4">
           Are you tired of small talk? Then this is the place for you. In the
-          EmpowerMe Garden we thrive by sharing perspectives, learnings,
+          EmpowerMe Collective we thrive by sharing perspectives, learnings,
           approaches and solultions. We go Further Faster otgether!
         </p>
       </li>
@@ -151,7 +149,7 @@ import Layout from "../layouts/pages.astro";
         <h3 class="font-montserratbold font-bold text-2xl mb-4">
           Feeling heard
         </h3><p class="font-hindlight pb-4">
-          Do you feel sometimes like a lonely worl? Do you feel that your loved
+          Do you feel sometimes like a lonely wolf? Do you feel that your loved
           ones are just on a different path or phase in life and not getting
           your struggles, challenges and stories? Well, you’re not alone. This
           is the place for you to be heard and understood as we’re all on
@@ -162,12 +160,12 @@ import Layout from "../layouts/pages.astro";
   </section>
 
   <section
-    class="flex flex-col justify-center items-center text-primary bg-secondary p-8 md:p-24"
+    class="flex flex-col justify-center items-center text-primary bg-tenth/80 backdrop-blur-md   p-8 md:p-24"
   >
     <p
-      class="font-montserrat font-bold text-2xl mb-4 md:mx-24 md:leading-loose text-center"
+      class="font-montserrat font-bold text-2xl md:text-3xl mb-4 md:mx-24 md:leading-relaxed text-center"
     >
-      Manu understands the balance between accomplishing our professional goals
+      "Manu understands the balance between accomplishing our professional goals
       while maintaining time for emotional, social, physical and spiritual
       wellness - so often overlooked in traditional patriarchal approaches to
       success."
@@ -177,7 +175,7 @@ import Layout from "../layouts/pages.astro";
         <img
           src="/images/jontel.jpg"
           alt="EmpowerMe Collective - Sevgi"
-          class="rounded-full size-16"
+          class="rounded-full size-24"
           decoding="async"
           loading="lazy"
           title="EmpowerMe Collective testimonies - Sevgi"
@@ -188,15 +186,15 @@ import Layout from "../layouts/pages.astro";
   </section>
 
   <section>
-    <h2 class="font-hindlight px-4 md:px-28 mt-16 leading-loose text-tenth">
-      Besides having great conversations, you will:
+    <h2 class="md:text-4xl font-montserrat font-bold  px-16 mt-16 leading-loose text-tenth">
+      Connect, share and...
     </h2>
 
     <section class="py-8">
       <ul class="grid grid-flow-row md:grid-cols-3 gap-8 px-16">
         <li>
           <img src="/images/flowershadow.jpeg" alt="" class="" />
-          <h3 class="pt-4 text-2xl text-tenth">Identify your Blocks</h3>
+          <h3 class="font-bold pt-4 text-2xl text-tenth">Identify your Blocks</h3>
           <p class="font-hindlight py-4 leading-loose text-tenth">
             Explore inner blocks connected to specific business challenges such
             as pricing, procrastination impostor syndrome etc.
@@ -204,7 +202,7 @@ import Layout from "../layouts/pages.astro";
         </li>
         <li>
           <img src="/images/smile-woman.jpeg" alt="" />
-          <h3 class="pt-4 text-2xl text-tenth">Form EmpowerMe Habits</h3>
+          <h3 class="font-bold pt-4 text-2xl text-tenth">Form EmpowerMe Habits</h3>
           <p class="font-hindlight py-4 leading-loose text-tenth">
             Identify habits that will bring up the version of yourself aligned
             with your desired outcomes and smash those inner blocks!
@@ -212,7 +210,7 @@ import Layout from "../layouts/pages.astro";
         </li>
         <li>
           <img src="/images/conversation-women.jpeg" alt="" />
-          <h3 class="pt-4 text-2xl text-tenth">The Power of the Collective</h3>
+          <h3 class="font-bold pt-4 text-2xl text-tenth">Feel the Power of the Collective</h3>
           <p class="font-hindlight py-4 leading-loose text-tenth">
             Have a supportive accountability group to support you and be part of
             a curated environment that makes those habits stick more easily.
@@ -225,21 +223,18 @@ import Layout from "../layouts/pages.astro";
   <section
     class="bg-[url(/images/quota-bg-join.jpeg)] bg-no-repeat bg-cover text-five pb-8"
   >
-    <section class="flex flex-row flex-wrap md:px-36 md:py-12 p-8 md:gap-16 items-center justify-items-center ">
-      <article class="md:p-24 bg-primary/30 backdrop-blur-sm">
-        <h2 class="font-montserratbold font-bold text-4xl mb-4">
-          HOW TO JOIN?
+    <section
+      class="flex flex-row flex-wrap md:flex-nowrap md:px-36 md:py-12 p-4 md:gap-16 items-center justify-items-center"
+    >
+      <article class="md:p-24 bg-primary/30 backdrop-blur-sm p-4">
+        <h2 class="font-montserratbold font-bold md:text-4xl text-3xl mb-4">
+          How to join?
         </h2>
-        <p class="font-hindlight pb-6 leading-loose">
-          The first steps is to register in the waiting list. By answering few
-          simple questions, we will be able to match you with the best upcoming
-          series of meetings (cross) EmpowerMe Gardens. This will define the
-          stage you’re in as well as some logistical questions such as frequency
-          or location/online.
+        <p class="font-hindlight pb-6 ">
+          The first steps is to register in the waiting list. Then, when ready to join the Collective, we’ll match you with the best upcoming series of meetings. We will connect over the stage you’re in as well as some logistical questions such as frequency or location, whether in person or online.
         </p>
         <p class="font-hindlight pb-6">
-          Each session will focus around a micro-learning or better said a
-          flower we will plant together in our gardens!
+          Each session will focus around a micro-learning - a flower we will plant together in our gardens!
         </p>
         <a
           href="https://forms.gle/dyYRrcgCU3TPL3tb8"
@@ -248,11 +243,11 @@ import Layout from "../layouts/pages.astro";
         >
       </article>
       <section>
-        <img src="/images/reading.png" alt="" class="" />
+        <img src="/images/flowers-coffee.jpeg" alt="" class="" />
       </section>
     </section>
     <section class="flex flex-row items-center justify-center text-secondary">
-      <p class="font-montserrat font-bold tracking-wide text-center">
+      <p class="font-montserrat font-bold tracking-wide text-center py-4 px-8">
         Want to learn more? <a
           href="mailto:connect@empowermecollective.com "
           target="_blank"
@@ -268,4 +263,5 @@ import Layout from "../layouts/pages.astro";
       </p>
     </section>
   </section>
+  <QnACollection />
 </Layout>

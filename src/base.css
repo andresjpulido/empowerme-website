@@ -76,7 +76,7 @@
 
 @layer base {
   body {
-    background-color: #f2f2f2;
+    background-color: #f2f2f2; 
   }
 
   p {
@@ -121,7 +121,7 @@
     @apply text-[#355E82] bg-white fill-white;
   }
   .footer {
-    @apply grid grid-flow-row md:grid-cols-3 gap-8 md:gap-0 md:px-24 md:py-16 p-8 py-16  text-tenth bg-eleventh text-sm;
+    @apply grid grid-flow-row md:grid-cols-3 items-center justify-center gap-8 md:gap-0 md:px-24 md:py-16 p-8 py-16  text-tenth bg-eleventh text-sm;
   }
   .social-links {
     @apply flex flex-row justify-center gap-6;

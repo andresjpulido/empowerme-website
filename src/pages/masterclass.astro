@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/pages.astro";
+import QnAMasterclass from "../components/QnAMasterclass.astro";
 ---
 
 <Layout
@@ -12,14 +13,14 @@ import Layout from "../layouts/pages.astro";
     class="flex flex-col justify-center items-center text-tenth bg-[url('/images/masterclass-bg.webp')] bg-no-repeat bg-cover py-8 px-4 md:p-16"
   >
     <section
-      class="flex flex-col p-4 md:m-24 md:p-12 bg-primary/60 backdrop-blur-md rounded-md"
+      class="flex flex-col p-4 md:m-24 md:p-12 text-tenth bg-primary/40 backdrop-blur-md rounded-md"
     >
       <h1
-        class="font-montserratbold font-bold text-3xl md:text-5xl px-4 md:px-36 text-center"
+        class="font-montserratbold font-bold text-3xl md:text-5xl px-4 md:px-36 text-center md:leading-snug"
       >
         Let's lead life at our own terms
       </h1>
-      <p class="md:px-24 py-8 text-center text-xl md:text-3xl leading-normal">
+      <p class="md:px-24 py-8 text-center text-xl md:text-2xl leading-normal">
         A Masterclass showing you the path to becoming the version of yourself
         aligned with your desired outcomes.
       </p>
@@ -38,7 +39,7 @@ import Layout from "../layouts/pages.astro";
   >
     <section>
       <p class="font-hindlight pb-4 leading-loose">
-        The EmpowerMe Masterclass is taking participants through a journey to
+        The EmpowerMe Masterclass takes you through a journey to
         identify some of the inner blocks and making those invisible stories
         visible. It then leverages the transformational power of habits to
         become the version of ourselves that will take participants to their
@@ -66,14 +67,12 @@ import Layout from "../layouts/pages.astro";
         Why the Masterclass?
       </h2>
       <p class="font-hindlight pb-4">
-        What is your desired destination? And what is the version of yourself 
-        that will take you there?
+        What is your desired destination? And what is the version of yourself  that will take you there?
       </p>
 
       <p class="font-hindlight pb-4">
-        EmpowerMe Collective enables the collective to become the version of
-        themselves that will bring their desired outcome to life, make them
-        grow, expand and support others to do the same.
+        The masterclass takes you thought a repeatable system that can be used in all areas of your life. It doesn’t give you the fish, it teaches you how to fish! 
+This process enables you to become the version of yourself that will bring your desired outcome to life, identify and overcome your innter block, expand and grow  yourself and by extension your business. 
       </p>
 
       <p class="py-4">
@@ -137,11 +136,11 @@ import Layout from "../layouts/pages.astro";
   </section>
 
   <section class="p-8 md:p-24 bg-primary text-five">
-    <h2 class="font-montserratbold font-bold text-4xl mb-8">
+    <h2 class="font-montserratbold font-bold text-4xl mb-12 text-center">
       In the Masterclass you will:
     </h2>
 
-    <ul class="grid grid-flow-row grid-cols-2 gap-10 my-4 md:px-36 list-none">
+    <ul class="grid grid-flow-row grid-cols-2 gap-x-12 md:gap-x-24 gap-y-12 my-4 md:px-48 list-none">
       <li class="flex flex-col justify-center items gap-4"> 
           <img src="/images/fish.svg" alt="" class="size-16 " /> 
         <div>
@@ -149,8 +148,7 @@ import Layout from "../layouts/pages.astro";
             Learn how to fish, instead of getting a fish
           </h3>
           <p class="font-hindlight">
-            Learn how to use a repeatable system to identify what is holding
-            them back and come out with a clear action plan;
+            Learn how to use a repeatable system to identify what is holding you back and come out with a clear action plan
           </p>
         </div>
       </li>
@@ -161,8 +159,7 @@ import Layout from "../layouts/pages.astro";
         <div>
           <h3 class="font-hindmedium">Sit in the driver’s seat of their lives</h3>
           <p class="font-hindlight">
-            Learn to implement the action plan by turning it into empowering
-            habits;
+            Learn to implement the action plan and turn it into empowering habits.
           </p>
         </div> 
       </li>
@@ -175,7 +172,7 @@ import Layout from "../layouts/pages.astro";
             Leverage the transformational power of habits
           </h3>
           <p class="font-hindlight">
-            Learn about habits, a few hacks and how to apply them to their life;
+            Learn about habits, a few hacks and how to apply them to your life.
           </p>
         </div> 
       </li>
@@ -194,10 +191,10 @@ import Layout from "../layouts/pages.astro";
   </section>
 
   <section
-    class="flex flex-row flex-wrap md:flex-nowrap  items-center justify-items-center bg-[#0291A9]"
+    class="grid grid-flow-row md:grid-cols-2 md:gap-8 items-center justify-items-center bg-tenth md:py-24 md:px-36   "
   >
-    <section class="p-8 md:p-24 md:py-16 text-primary">
-      <h2 class="font-montserratbold font-bold text-4xl mb-6">HOW TO JOIN?</h2>
+    <section class="text-primary p-8">
+      <h2 class="font-montserratbold font-bold text-4xl mb-6">How to join?</h2>
       <p class="font-hindlight pb-4 leading-loose">
         Whether you want to join as an individual or you’d like to organise the
         session for your tribe, the first step is to register your interest in
@@ -213,8 +210,9 @@ import Layout from "../layouts/pages.astro";
         >
       </p>
     </section>
-    <section class=" ">
-      <img src="/images/office.jpeg" alt="" />
+    <section class="py-8">
+      <img src="/images/office.jpeg" alt="" class="size-5/6 mx-auto" />
     </section>
   </section>
+<QnAMasterclass />
 </Layout>
