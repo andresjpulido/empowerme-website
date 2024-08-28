@@ -35,23 +35,144 @@ import logo from "../../public/logo.svg";
       </div>
     </header>
   </nav>
+
   <!-- nav mobile -->
-  <nav class="hidden sticky top-0 bg-one z-10">
+  <nav class="md:hidden sticky top-0 bg-one z-50">
+    <!-- menu mobile -->
+    <div class="flex justify-between items-center px-4  py-2  bg-primary">
+      
+      <div class="mx-auto">
+        <div class="md:hidden flex items-center ">
+          <h1 class="flex flex-row">
+            <span
+              class="font-monserratbold font-bold text-lg bg-primary text-[#2D6873] px-1"
+              >EMPOWER ME</span
+            >
+            <span class="font-monserrat font-light text-lg text-primary bg-tenth  px-1"
+              >COLLECTIVE</span
+            >
+          </h1>
+        </div>
+      </div>
+       
+      <button
+        id="menu-button"
+        class="button-three"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+      <img src="/images/bars.svg" class="size-12" alt="">
+      </button>
+    </div>
+
     <!-- menu mobile -->
     <section
       id="mobile-menu"
-      class="hide-menu fixed left-0 top-14 z-50 w-full h-full transition-transform btn-primary border-primary-blue"
+      class="hide-menu fixed top-[56px] left-0  w-full h-full transition-transform bg-black/75 border-primary-blue bg-primary"
     >
-      <div class="bg-one w-[75%] drop-shadow-2xl text-primary">
+      <div class="bg-one w-[75%] h-full drop-shadow-2xl text-navprimary ">
         <ul
-          class="unset flex flex-col justify-center text-text-bold gap-4 [&>li]:p-1 px-6"
+          class="unset flex flex-col justify-center text-tenth gap-4 [&>li]:p-1 p-6 "
         >
-          <li><HeaderLink href="/masterclass">Regular Meet ups</HeaderLink></li>
-          <li><HeaderLink href="/courses">Habit masterclass</HeaderLink></li>
-          <li><HeaderLink href="/about">Connect and grow</HeaderLink></li>
+          <li class="p-2"><HeaderLink href='/'>Home</HeaderLink></li>
+          <li class="p-2"><HeaderLink href='/collective'>Collective</HeaderLink></li>
+          <li class="p-2"><HeaderLink href='/masterclass'>Masterclas</HeaderLink></li>
         </ul>
       </div>
     </section>
   </nav>
 </Fragment>
  
+
+<script>
+  // @ts-nocheck
+
+  document.querySelector("#menu-button").addEventListener("click", () => {
+    const currentState = document
+      .querySelector("#menu-button")
+      .getAttribute("data-state");
+    if (!currentState || currentState === "closed") {
+      document
+        .querySelector("#menu-button")
+        .setAttribute("data-state", "opened");
+      document
+        .querySelector("#menu-button")
+        .setAttribute("aria-expanded", "true");
+
+      const menuElem = document.querySelector("#mobile-menu");
+      menuElem.classList.remove("hide-menu");
+      menuElem.classList.add("show-menu");
+      document.body.style.overflow = "hidden";
+    } else {
+      document
+        .querySelector("#menu-button")
+        .setAttribute("data-state", "closed");
+      document
+        .querySelector("#menu-button")
+        .setAttribute("aria-expanded", "false");
+
+      const menuElem = document.querySelector("#mobile-menu");
+      menuElem.classList.remove("show-menu");
+      menuElem.classList.add("hide-menu");
+      document.body.style.overflow = "auto";
+    }
+  });
+</script>
+
+<style>
+  .hide-menu {
+    transform: translateX(-100%);
+  }
+  .show-menu {
+    transform: translateX(0%);
+  }
+
+  .button-three {
+    --button-color: black;
+    overflow: hidden;
+  }
+
+  .button-three .hamburger {
+    transition:
+      translate 1s,
+      rotate 1s;
+  }
+
+  .button-three[aria-expanded="true"] .hamburger {
+    translate: 10px -10px;
+    rotate: 0.125turn;
+  }
+
+  .button-three .line {
+    transition: 1s;
+    stroke-dasharray: 60 31 60 300;
+  }
+
+  .button-three[aria-expanded="true"] .line {
+    stroke-dasharray: 60 105 60 300;
+    stroke-dashoffset: -90;
+  }
+</style>
+
+<style>
+  h2 a,
+  h2 a.active {
+    text-decoration: none;
+  } 
+  nav a {
+     
+    text-decoration: none;
+  }
+  nav a.active {
+    text-decoration: none; 
+  }
+  .social-links,
+  .social-links a {
+    display: flex;
+  }
+  @media (max-width: 720px) {
+    .social-links {
+      display: none;
+    }
+  }
+</style>
