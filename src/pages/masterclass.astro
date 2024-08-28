@@ -9,13 +9,13 @@ import Layout from "../layouts/pages.astro";
   heroImage="/blog-placeholder-about.jpg"
 >
   <header
-    class="flex flex-col justify-center items-center text-tenth bg-[url('/images/masterclass-bg.webp')] bg-no-repeat bg-cover py-8 px-4  md:p-16"
+    class="flex flex-col justify-center items-center text-tenth bg-[url('/images/masterclass-bg.webp')] bg-no-repeat bg-cover py-8 px-4 md:p-16"
   >
     <section
-      class="flex flex-col p-4 md:m-24 md:p-12 bg-primary/30 backdrop-blur-md rounded-md"
+      class="flex flex-col p-4 md:m-24 md:p-12 bg-primary/60 backdrop-blur-md rounded-md"
     >
       <h1
-        class="font-montserratbold font-bold text-3xl md:text-5xl px-4 md:px-36 text-center md:leading-normal"
+        class="font-montserratbold font-bold text-3xl md:text-5xl px-4 md:px-36 text-center"
       >
         Let's lead life at our own terms
       </h1>
@@ -27,7 +27,7 @@ import Layout from "../layouts/pages.astro";
         <a
           href="https://forms.gle/dyYRrcgCU3TPL3tb8"
           target="_blank"
-          class="btn-tertiary mx-auto">JOIN THE WAITING LIST</a
+          class="btn-fifth mx-auto">JOIN THE WAITING LIST</a
         >
       </p>
     </section>
@@ -49,32 +49,28 @@ import Layout from "../layouts/pages.astro";
       <p class="font-hindlight pb-4 leading-loose">
         Habits hold immense power for they can change the way we see ourselves.
         And if we change how we view ourselves, we change what we believe is
-        possible, and that’s transformational!
+        possible, and that’s transformational.
       </p>
-
-      <p class="font-hindlight pb-4 leading-loose">
-        The process thought is a repeatable system that can be used in all areas
-        of our lives. It doesn’t give you the fish but teaches you how to fish!
-      </p>
+      <p class="font-hindlight pb-4 leading-loose">Take your power back!</p>
     </section>
   </section>
 
   <section
-    class="grid grid-flow-row md:grid-cols-2 md:p-16 p-8 gap-6 md:gap-2 items-center justify-items-center bg-primary text-five"
+    class="grid grid-flow-row md:grid-cols-2 md:px-16 md:py-36 py-12 p-8 gap-6 md:gap-2 items-center justify-center bg-primary text-five"
   >
-    <section>
-      <img src="/images/laptop-coffee.png" alt="" />
+    <section class="flex justify-end">
+      <img src="/images/laptop-coffee.png" alt="" class="w-96" />
     </section>
-    <section class="md:px-8">
-      <h2 class="font-montserratbold font-bold text-4xl mb-6">
-        WHY EMPOWER ME MASTERCLASS?
+    <section class="md:px-24">
+      <h2 class="font-montserratbold md:text-4xl text-3xl mb-6">
+        Why the Masterclass?
       </h2>
-      <p class="font-hindlight pb-4 leading-loose">
+      <p class="font-hindlight pb-4">
         What is your desired destination? And what is the version of yourself 
         that will take you there?
       </p>
 
-      <p class="font-hindlight pb-4 leading-loose">
+      <p class="font-hindlight pb-4">
         EmpowerMe Collective enables the collective to become the version of
         themselves that will bring their desired outcome to life, make them
         grow, expand and support others to do the same.
@@ -91,27 +87,29 @@ import Layout from "../layouts/pages.astro";
   </section>
 
   <section
-    class="flex flex-col justify-center items-center text-primary bg-[url('/images/usecase.jpeg')] bg-no-repeat bg-cover p-8 md:p-36"
+    class="flex flex-col justify-center items-center text-tenth bg-[url('/images/usecase.jpeg')] bg-no-repeat bg-cover p-8 md:p-24"
   >
-    <article>
-      <h2 class="font-montserratbold font-bold text-4xl mb-6 text-primary">
-        CASE STUDY or FEEDBACK I AM PARTICULARLY PROUD OF
+    <article
+      class="flex flex-col p-4 bg-primary/60 backdrop-blur-md rounded-md"
+    >
+      <h2 class="font-montserratbold font-bold text-2xl mb-6">
+        Case study: A story I am particularly proud of
       </h2>
-      <p class="font-hindlight pb-4 leading-loose">
+      <p class="font-hindlight pb-4">
         When I first created the course “The Transformation power of habits”, I
         shared it with my sister. I did so because she was in the process of
-        writing her third book ( please note, the process is transferable to any
+        writing her third book (please note, the process is transferable to any
         challenging area in our lives). She was complaining on how stretched she
         was with her busy schedule and as a result procrastinating on her
         writing. This led her to feel super stressed as the looming deadline was
         putting her under immense pressure yet still continuing to procrastinate
         and self-sabotaging herself.
       </p>
-      <p class="font-hindlight pb-4 leading-loose">
+      <p class="font-hindlight pb-4">
         My beautiful sister took the formula shared in this masterclass and
         boom, she published an incredible book in record time and said:
       </p>
-      <p class="font-hindlight pb-4 leading-loose">
+      <p class="font-hindlight pb-4">
         “I've always found it difficult to develop a routine, and I've viewed my
         life as a "creative mess." At the end of the day, when I had a deadline,
         I'd always find a way to finish my piece on time and it would be well
@@ -119,87 +117,86 @@ import Layout from "../layouts/pages.astro";
         completely exhausted and drained. I often wondered why was I doing that
         to me and how to change it. [...]
       </p>
-      <p class="font-hindlight pb-16 leading-loose">
+      <p class="font-hindlight pb-8 leading-loose">
         It was mind blowing for me to realise how fast we can change and how
         less stressful my life can become. I've started to use the hacks I
         learned for everything and the results are phenomenal. I genuinely adore
         this course and highly recommend it!”
       </p>
-      <p class="  ">
-        <img src="images/Florinda.png" alt="" class="rounded-full size-48 mx-auto" />
-      </p>
-      <p class="text-center pt-8">Florinda</p>
+      <div class="flex flex-col justify-center items-center">
+        <p class="">
+          <img
+            src="images/Florinda.png"
+            alt=""
+            class="rounded-full size-24 mx-auto"
+          />
+        </p>
+        <p class="text-center text-sm pt-2">Florinda</p>
+      </div>
     </article>
   </section>
 
-  <section
-    class=" p-8 md:p-24 bg-primary text-five"
-  >
-    <h2 class="font-montserratbold font-bold text-4xl mb-6">
-      In the EmpowerMe Masterclass you will:
+  <section class="p-8 md:p-24 bg-primary text-five">
+    <h2 class="font-montserratbold font-bold text-4xl mb-8">
+      In the Masterclass you will:
     </h2>
 
-    <ul class="grid grid-flow-row grid-cols-2 gap-8 font-hindlight my-4 md:pl-6 leading-8 list-none">
-      <li class="flex flex-row items-top gap-2">
+    <ul class="grid grid-flow-row grid-cols-2 gap-10 my-4 md:px-36 list-none">
+      <li class="flex flex-col justify-center items gap-4"> 
+          <img src="/images/fish.svg" alt="" class="size-16 " /> 
         <div>
-          <img
-            src="/images/check.svg"
-            alt=""
-            class="bg-five h-4 md:w-4 w-12 mr-2 mt-2 rounded-sm"
-          />
+          <h3 class="font-hindmedium">
+            Learn how to fish, instead of getting a fish
+          </h3>
+          <p class="font-hindlight">
+            Learn how to use a repeatable system to identify what is holding
+            them back and come out with a clear action plan;
+          </p>
         </div>
-        <p class="font-hindlight leading-8">
-          Learn how to fish, instead of getting a fish - Learn how to use a
-          repeatable system to identify what is holding them back and come out
-          with a clear action plan;
-        </p>
       </li>
-      <li class="flex flex-row items-top gap-2">
+      <li class="flex flex-col items-top gap-2">
         <div>
-          <img
-            src="/images/check.svg"
-            alt=""
-            class="bg-five h-4 md:w-4 w-8 mr-2 mt-2 rounded-sm"
-          />
+          <img src="/images/driving.svg" alt="" class="size-16" /> 
         </div>
-        <p class="font-hindlight leading-8">
-          Sit in the driver’s seat of their lives -  Learn to implement the
-          action plan by turning it into empowering habits;
-        </p>
+        <div>
+          <h3 class="font-hindmedium">Sit in the driver’s seat of their lives</h3>
+          <p class="font-hindlight">
+            Learn to implement the action plan by turning it into empowering
+            habits;
+          </p>
+        </div> 
       </li>
-      <li class="flex flex-row items-top gap-2">
+      <li class="flex flex-col items-top gap-2">
         <div>
-          <img
-            src="/images/check.svg"
-            alt=""
-            class="bg-five h-4 md:w-4 w-8 mr-2 mt-2 rounded-sm"
-          />
+          <img src="/images/transformational.svg" alt="" class="size-16" /> 
         </div>
-        <p class="font-hindlight leading-8">
-          Leverage the transformational power of habits - Learn about habits, a
-          few hacks and how to apply them to their life;
-        </p>
+        <div>
+          <h3 class="font-hindmedium">
+            Leverage the transformational power of habits
+          </h3>
+          <p class="font-hindlight">
+            Learn about habits, a few hacks and how to apply them to their life;
+          </p>
+        </div> 
       </li>
-      <li class="flex flex-row items-top gap-2">
+      <li class="flex flex-col items-top gap-2">
         <div>
-          <img
-            src="/images/check.svg"
-            alt=""
-            class="bg-five h-4 md:w-4 w-8 mr-2 mt-2 rounded-sm"
-          />
+          <img src="/images/em.svg" alt="" class="h-16 " /> 
         </div>
-        <p class="font-hindlight leading-8">
-          Learn a game changing EmpowerMe Habit: A pathway to your goals and
-          change of mindset for success.
-        </p>
+        <div>
+          <h3 class="font-hindmedium">Learn a game changing EmpowerMe Habit</h3>
+          <p class="font-hindlight">
+            A pathway to your goals and change of mindset for success.
+          </p>
+        </div> 
       </li>
     </ul>
   </section>
 
   <section
-    class="flex flex-row flex-wrap items-center justify-items-center bg-[#0291A9]"
+    class="flex flex-row flex-wrap md:flex-nowrap  items-center justify-items-center bg-[#0291A9]"
   >
-    <section class="p-8 md:p-24 md:py-16  text-primary">
+    <section class="p-8 md:p-24 md:py-16 text-primary">
       <h2 class="font-montserratbold font-bold text-4xl mb-6">HOW TO JOIN?</h2>
       <p class="font-hindlight pb-4 leading-loose">
         Whether you want to join as an individual or you’d like to organise the
@@ -216,7 +213,7 @@ import Layout from "../layouts/pages.astro";
         >
       </p>
     </section>
-    <section>
+    <section class=" ">
       <img src="/images/office.jpeg" alt="" />
     </section>
   </section>

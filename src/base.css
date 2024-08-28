@@ -3,95 +3,92 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'monserrat-black';
-  src: url('/fonts/Montserrat-Black.ttf') format('truetype');
+  font-family: "monserrat-black";
+  src: url("/fonts/Montserrat-Black.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'monserrat-regular';
-  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-family: "monserrat-regular";
+  src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'monserrat-bold';
-  src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+  font-family: "monserrat-bold";
+  src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'monserrat-semibold';
-  src: url('/fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-family: "monserrat-semibold";
+  src: url("/fonts/Montserrat-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'monserrat-medium';
-  src: url('/fonts/Montserrat-Medium.ttf') format('truetype');
+  font-family: "monserrat-medium";
+  src: url("/fonts/Montserrat-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'hindlight';
-  src: url('/fonts/Hind-Light.ttf') format('truetype');
+  font-family: "hindlight";
+  src: url("/fonts/Hind-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'hindmedium';
-  src: url('/fonts/Hind-Medium.ttf') format('truetype');
+  font-family: "hindmedium";
+  src: url("/fonts/Hind-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'monserrat';
-  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-family: "monserrat";
+  src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'licoriseregular';
-  src: url('/fonts/Licorice-Regular.ttf') format('truetype');
+  font-family: "licoriseregular";
+  src: url("/fonts/Licorice-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
- 
 
 @layer base {
-  body{
-     
-    background-color: #F2F2F2;
-  } 
-   
-  p{
-    font-family: 'monserrat-regular', sans-serif;
+  body {
+    background-color: #f2f2f2;
+  }
+
+  p {
+    font-family: "monserrat-regular", sans-serif;
   }
   details {
   }
   summary {
-    list-style: none;  
+    list-style: none;
   }
   @media only screen and (min-width: 600px) {
-    summary { 
-       
+    summary {
     }
   }
 }
@@ -114,7 +111,9 @@
   .btn-fourth {
     @apply text-tenth border-solid border-tenth border-2 hover:bg-tenth hover:text-primary focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2 md:py-2  me-2   dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
   }
-
+  .btn-fifth {
+    @apply bg-primary text-tenth border-tenth border-2 hover:border-five hover:bg-five hover:text-primary focus:ring-4 focus:ring-five font-medium rounded-md text-sm px-5 py-2 md:py-2.5 me-2   focus:outline-none dark:focus:ring-five;
+  }
   .icons {
     @apply text-white bg-[#355E82] fill-[#355E82];
   }
@@ -128,4 +127,3 @@
     @apply flex flex-row justify-center gap-6;
   }
 }
- 
