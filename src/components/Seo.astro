@@ -1,10 +1,9 @@
 ---
 import jsonLDGenerator from "../js/jsonLD";
 
-const { url = Astro.url, siteData } = Astro.props;
+const { url = Astro.url, siteData, title, description } = Astro.props;
 
-const { title, description, image, frontmatter, robots, domain, keywords, site_name } =
-  siteData;
+const { image, frontmatter, robots, domain, keywords, site_name } = siteData;
 
 const jsonLD = jsonLDGenerator({
   type: frontmatter ? "post" : "website",
@@ -43,6 +42,8 @@ const jsonLD = jsonLDGenerator({
 <meta property="twitter:url" content={Astro.url} />
 
 {robots && <meta name="robots" content="noindex, nofollow" />}
+
+<title>{title}</title>
 
 <!-- JSON LD -->
 <Fragment set:html={jsonLD} />
