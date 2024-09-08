@@ -1,0 +1,64 @@
+---
+import Layout from "../layouts/pages.astro";
+---
+
+<Layout
+  title="EmpowerMe Collective | Business Coaching"
+  description="A community of entrepreneurs tackling the challenges of growing a business by overcoming our inner blocks, working on our mindset and becoming the version of ourselves most aligned with our desired outcomes."
+  pubDate={new Date("September 06 2024")}
+  heroImage="/images/miniature.png"
+>
+  <script>
+    !(function () {
+      if (!window.klaviyo) {
+        window._klOnsite = window._klOnsite || [];
+        try {
+          window.klaviyo = new Proxy(
+            {},
+            {
+              get: function (n, i) {
+                return "push" === i
+                  ? function () {
+                      var n;
+                      (n = window._klOnsite).push.apply(n, arguments);
+                    }
+                  : function () {
+                      for (
+                        var n = arguments.length, o = new Array(n), w = 0;
+                        w < n;
+                        w++
+                      )
+                        o[w] = arguments[w];
+                      var t =
+                          "function" == typeof o[o.length - 1]
+                            ? o.pop()
+                            : void 0,
+                        e = new Promise(function (n) {
+                          window._klOnsite.push(
+                            [i].concat(o, [
+                              function (i) {
+                                t && t(i), n(i);
+                              },
+                            ])
+                          );
+                        });
+                      return e;
+                    };
+              },
+            }
+          );
+        } catch (n) {
+          (window.klaviyo = window.klaviyo || []),
+            (window.klaviyo.push = function () {
+              var n;
+              (n = window._klOnsite).push.apply(n, arguments);
+            });
+        }
+      }
+    })();
+  </script>
+
+  <section class="m-24">
+    <div class="klaviyo-form-WAaqaG">Connect and grow 2</div>
+  </section>
+</Layout>
