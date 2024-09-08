@@ -9,18 +9,19 @@ import Layout from "../layouts/pages.astro";
   heroImage="/images/miniature.png"
 >
   <script>
-    !(function () {
-      if (!window.klaviyo) {
-        window._klOnsite = window._klOnsite || [];
+    // @ts-nocheck
+    const klaviyoInit = () => {
+      if (!(window as any).klaviyo) {
+        (window as any)._klOnsite = (window as any)._klOnsite || [];
         try {
-          window.klaviyo = new Proxy(
+            (window as any).klaviyo = new Proxy(
             {},
             {
               get: function (n, i) {
                 return "push" === i
                   ? function () {
                       var n;
-                      (n = window._klOnsite).push.apply(n, arguments);
+                      (n = (window as any)._klOnsite).push.apply(n, arguments);
                     }
                   : function () {
                       for (
@@ -34,9 +35,9 @@ import Layout from "../layouts/pages.astro";
                             ? o.pop()
                             : void 0,
                         e = new Promise(function (n) {
-                          window._klOnsite.push(
+                            (window as any)._klOnsite.push(
                             [i].concat(o, [
-                              function (i) {
+                               (i:any) => {
                                 t && t(i), n(i);
                               },
                             ])
@@ -48,14 +49,16 @@ import Layout from "../layouts/pages.astro";
             }
           );
         } catch (n) {
-          (window.klaviyo = window.klaviyo || []),
-            (window.klaviyo.push = function () {
+          ((window as any).klaviyo = (window as any).klaviyo || []),
+            ((window as any).klaviyo.push = function () {
               var n;
-              (n = window._klOnsite).push.apply(n, arguments);
+              (n = (window as any)._klOnsite).push.apply(n, arguments);
             });
         }
       }
-    })();
+    } 
+
+    klaviyoInit()
   </script>
 
   <section class="m-24">
