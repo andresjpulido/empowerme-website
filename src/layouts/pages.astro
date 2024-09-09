@@ -1,8 +1,8 @@
 ---
 import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro"; 
+import Footer from "../components/Footer.astro";
 import Seo from "../components/Seo.astro";
-import siteData from "../data/siteData.json"; 
+import siteData from "../data/siteData.json";
 import "../base.css";
 
 Astro.response.headers.set(
@@ -11,7 +11,6 @@ Astro.response.headers.set(
 );
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
-
 ---
 
 <!doctype html>
@@ -31,13 +30,14 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       type="font/ttf"
       crossorigin
     />
- 
+
     <Seo {siteData} {title} {description} />
 
-    
-    
-    
-    
+    <script
+      type="text/javascript"
+      async
+      src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=PUrkeHP"
+    ></script>;
   </head>
 
   <body>
@@ -45,7 +45,4 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     <slot />
     <Footer />
   </body>
-  
-  <script type="text/javascript" async="" 
-    src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=PUrkeHP"></script>;
 </html>
