@@ -33,6 +33,14 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
     <Seo {siteData} {title} {description} />
 
+    
+
+  </head>
+
+  <body>
+    <Header />
+    <slot />
+    <Footer />
     <script
       type="text/javascript"
       async
@@ -92,12 +100,5 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   
       klaviyoInit()
     </script>
-    
-  </head>
-
-  <body>
-    <Header />
-    <slot />
-    <Footer />
   </body>
 </html>
