@@ -8,60 +8,13 @@ import Layout from "../layouts/pages.astro";
   pubDate={new Date("September 06 2024")}
   heroImage="/images/miniature.png"
 >
-  <script>
-    // @ts-nocheck
-    const klaviyoInit = () => {
-      if (!(window as any).klaviyo) {
-        (window as any)._klOnsite = (window as any)._klOnsite || [];
-        try {
-            (window as any).klaviyo = new Proxy(
-            {},
-            {
-              get: function (n, i) {
-                return "push" === i
-                  ? function () {
-                      var n;
-                      (n = (window as any)._klOnsite).push.apply(n, arguments);
-                    }
-                  : function () {
-                      for (
-                        var n = arguments.length, o = new Array(n), w = 0;
-                        w < n;
-                        w++
-                      )
-                        o[w] = arguments[w];
-                      var t =
-                          "function" == typeof o[o.length - 1]
-                            ? o.pop()
-                            : void 0,
-                        e = new Promise(function (n) {
-                            (window as any)._klOnsite.push(
-                            [i].concat(o, [
-                               (i:any) => {
-                                t && t(i), n(i);
-                              },
-                            ])
-                          );
-                        });
-                      return e;
-                    };
-              },
-            }
-          );
-        } catch (n) {
-          ((window as any).klaviyo = (window as any).klaviyo || []),
-            ((window as any).klaviyo.push = function () {
-              var n;
-              (n = (window as any)._klOnsite).push.apply(n, arguments);
-            });
-        }
-      }
-    } 
 
-    klaviyoInit()
-  </script>
-
-  <section class="m-24">
+<section class="m-24">
     <div class="klaviyo-form-WAaqaG">Connect and grow 2</div>
+    <div class="klaviyo-form-WAaqaG"></div>
   </section>
+
+  
+
+
 </Layout>

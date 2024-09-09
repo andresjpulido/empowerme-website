@@ -37,7 +37,62 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       type="text/javascript"
       async
       src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=PUrkeHP"
-    ></script>;
+    ></script>
+
+    <script>
+      // @ts-nocheck
+      const klaviyoInit = () => {
+        if (!(window as any).klaviyo) {
+          (window as any)._klOnsite = (window as any)._klOnsite || [];
+          try {
+              (window as any).klaviyo = new Proxy(
+              {},
+              {
+                get: function (n, i) {
+                  return "push" === i
+                    ? function () {
+                        var n;
+                        (n = (window as any)._klOnsite).push.apply(n, arguments);
+                      }
+                    : function () {
+                        for (
+                          var n = arguments.length, o = new Array(n), w = 0;
+                          w < n;
+                          w++
+                        )
+                          o[w] = arguments[w];
+                        var t =
+                            "function" == typeof o[o.length - 1]
+                              ? o.pop()
+                              : void 0,
+                          e = new Promise(function (n) {
+                              (window as any)._klOnsite.push(
+                              [i].concat(o, [
+                                 (i:any) => {
+                                  t && t(i), n(i);
+                                },
+                              ])
+                            );
+                          });
+                        return e;
+                      };
+                },
+              }
+            );
+          } catch (n) {
+            ((window as any).klaviyo = (window as any).klaviyo || []),
+              ((window as any).klaviyo.push = function () {
+                var n;
+                (n = (window as any)._klOnsite).push.apply(n, arguments);
+              });
+          }
+        }
+        console.log("end script")
+      } 
+  
+      klaviyoInit()
+    </script>
+    
   </head>
 
   <body>
