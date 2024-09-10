@@ -23,6 +23,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     <link rel="icon" href="favicon.ico" />
     <link rel="preload" href="/images/cover-bg.webp" as="image" />
     <link rel="preload" href="/images/quote-bg.png" as="image" />
+    <link rel="preload" href="/images/flowers.webp" as="image" />
+    
     <link
       rel="preload"
       href="/fonts/Montserrat-Bold.ttf"
@@ -32,35 +34,36 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     />
 
     <Seo {siteData} {title} {description} />
-
-    
-
   </head>
 
   <body>
     <Header />
     <slot />
-    <Footer />
+    
     <script
       type="text/javascript"
       async
-      src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=PUrkeHP"
+      src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UrkeHP"
     ></script>
 
     <script>
       // @ts-nocheck
+
       const klaviyoInit = () => {
         if (!(window as any).klaviyo) {
           (window as any)._klOnsite = (window as any)._klOnsite || [];
           try {
-              (window as any).klaviyo = new Proxy(
+            (window as any).klaviyo = new Proxy(
               {},
               {
                 get: function (n, i) {
                   return "push" === i
                     ? function () {
                         var n;
-                        (n = (window as any)._klOnsite).push.apply(n, arguments);
+                        (n = (window as any)._klOnsite).push.apply(
+                          n,
+                          arguments
+                        );
                       }
                     : function () {
                         for (
@@ -74,9 +77,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
                               ? o.pop()
                               : void 0,
                           e = new Promise(function (n) {
-                              (window as any)._klOnsite.push(
+                            (window as any)._klOnsite.push(
                               [i].concat(o, [
-                                 (i:any) => {
+                                (i: any) => {
                                   t && t(i), n(i);
                                 },
                               ])
@@ -95,10 +98,26 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
               });
           }
         }
-        console.log("end script")
-      } 
-  
-      klaviyoInit()
+         
+      };
+
+      klaviyoInit();
     </script>
+
+    <script type="text/javascript">
+      let cbox = document
+        .querySelectorAll(".klaviyo_form_trigger")
+         
+
+        cbox.forEach((box) => {
+        box.addEventListener("click", () => {
+          window._klOnsite = window._klOnsite || [];
+          window._klOnsite.push(["openForm", "WAaqaG"]);
+        });
+      });
+    </script>
+
+    <div class="klaviyo-form-WAaqaG"></div>
+    <Footer />
   </body>
 </html>
