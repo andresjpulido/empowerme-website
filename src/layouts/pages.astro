@@ -17,14 +17,14 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <meta name="theme-color" content="var(--primary-color)" />
     <link rel="icon" href="favicon.ico" />
     <link rel="preload" href="/images/cover-bg.webp" as="image" />
     <link rel="preload" href="/images/quote-bg.png" as="image" />
     <link rel="preload" href="/images/flowers.webp" as="image" />
-    
+
     <link
       rel="preload"
       href="/fonts/Montserrat-Bold.ttf"
@@ -39,7 +39,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   <body>
     <Header />
     <slot />
-    
+
     <script
       type="text/javascript"
       async
@@ -48,7 +48,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
     <script>
       // @ts-nocheck
-
+      /*
       const klaviyoInit = () => {
         if (!(window as any).klaviyo) {
           (window as any)._klOnsite = (window as any)._klOnsite || [];
@@ -100,16 +100,15 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         }
          
       };
-
+*/
       //klaviyoInit();
+      //window._klOnsite = window._klOnsite || [];
     </script>
 
     <script type="text/javascript">
-      let cbox = document
-        .querySelectorAll(".klaviyo_form_trigger")
-         
+      let cbox = document.querySelectorAll(".klaviyo_form_trigger");
 
-        cbox.forEach((box) => {
+      cbox.forEach((box) => {
         box.addEventListener("click", () => {
           window._klOnsite = window._klOnsite || [];
           window._klOnsite.push(["openForm", "WAaqaG"]);
