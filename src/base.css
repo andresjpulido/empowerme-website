@@ -96,23 +96,23 @@
 @layer components {
   .btn-primary {
     @apply bg-five text-primary border-five border-2 hover:border-five hover:bg-primary hover:text-five focus:ring-4 focus:ring-five font-medium 
-    rounded-md text-sm px-5 py-2 md:py-2.5 me-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none 
-    dark:focus:ring-five;
+    rounded-md text-sm px-5 py-2 md:py-2.5 me-2   focus:outline-none 
+     ;
   }
   .btn-secondary {
     @apply bg-primary text-five border-solid border-primary ring-primary ring-2 border-2 hover:bg-five hover:text-primary hover:border-five
     focus:ring-4 focus:ring-five font-medium rounded-md text-sm px-5 py-2 md:py-2.5 me-2 
-    dark:bg-blue-600 dark:hover:bg-five focus:outline-none dark:focus:ring-five;
+       focus:outline-none  ;
   }
   .btn-tertiary {
     @apply text-primary border-solid border-primary border-2   hover:bg-five hover:border-primary hover:text-primary focus:ring-4
-     focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2 md:py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
+     focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2 md:py-2.5 me-2 mb-2   focus:outline-none ;
   }
   .btn-fourth {
-    @apply text-tenth border-solid border-tenth border-2 hover:bg-tenth hover:text-primary focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2 md:py-2  me-2   dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-[#3283ca];
+    @apply text-tenth border-solid border-tenth border-2 hover:bg-tenth hover:text-primary focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2 md:py-2  me-2     focus:outline-none  ;
   }
   .btn-fifth {
-    @apply bg-primary text-tenth border-tenth border-2 hover:border-five hover:bg-five hover:text-primary focus:ring-4 focus:ring-five font-medium rounded-md text-sm px-5 py-2 md:py-2.5 me-2   focus:outline-none dark:focus:ring-five;
+    @apply bg-primary text-tenth border-tenth border-2 hover:border-five hover:bg-five hover:text-primary focus:ring-4 focus:ring-five font-medium rounded-md text-sm px-5 py-2 md:py-2.5 me-2   focus:outline-none  ;
   }
   .icons {
     @apply text-white bg-[#355E82] fill-[#355E82];
