@@ -26,18 +26,20 @@ import "../base.css";
     <article>
       <h2></h2>
       <section
-        class="grid grid-flow-row md:grid-cols-2 gap-8 p-8 md:px-56 justify-center items-center"
+        class="flex flex-row flex-wrap-reverse py-8 justify-center items-center"
       >
-        <img
-          src="/images/manu.webp"
-          decoding="async"
-          loading="lazy"
-          alt="Manuela Klevisser, founder of EmpowerMe Collective"
-          class="md:size-72 size-48 p-5 border-primary border-2 rounded-full mx-auto"
-          title="Manuela Klevisser, founder of EmpowerMe Collective "
-        />
-        <section>
-          <p class="text-tenth font-hindmedium text-4xl md:w-96">
+        <section class="md:basis-1/2 flex flex-row md:justify-end justify-center">
+          <img
+            src="/images/manu.webp"
+            decoding="async"
+            loading="lazy"
+            alt="Manuela Klevisser, founder of EmpowerMe Collective"
+            class="md:size-72 size-48 p-5 border-primary border-2 rounded-full md:mr-32"
+            title="Manuela Klevisser, founder of EmpowerMe Collective "
+          />
+        </section>
+        <section class="md:basis-1/2 p-8 md:p-0">
+          <p class="text-tenth font-hindmedium text-4xl md:w-96 ">
             Hello beautiful people!
           </p>
 
@@ -50,8 +52,12 @@ import "../base.css";
             am a repeated offender - this is not the first Collective!!!
           </p>
         </section>
+      </section>
 
-        <section>
+      <section
+        class="flex flex-row flex-wrap justify-center items-center"
+      >
+        <section class="md:basis-1/2 flex flex-row flex-wrap justify-end md:px-16 px-8">
           <p class="mb-4 font-hindlight md:w-96">
             The first time it was after connecting with a person I met at a
             course. We clicked immediately and agreed to meet again over a
@@ -65,13 +71,13 @@ import "../base.css";
             conversations more often?
           </p>
         </section>
-        <section>
+        <section class="md:basis-1/2 flex flex-row md:justify-start justify-center">
           <img
             src="/images/coffee2.webp"
             decoding="async"
             loading="lazy"
             alt="Manuela Klevisser"
-            class="md:size-96 size-48 p-5 mx-auto"
+            class="md:size-96 size-48 py-5 "
             title="EmpowerMe Collective Manuela Klevisser"
           />
         </section>
@@ -85,7 +91,7 @@ import "../base.css";
           decoding="async"
           loading="lazy"
           alt="Manuela Klevisser"
-          class="border-primary mx-auto"
+          class="border-primary mx-auto md:py-0 py-8 md:order-none order-last"
           title="EmpowerMe Collective Manuela Klevisser"
         />
 
@@ -105,13 +111,13 @@ import "../base.css";
 
           <p class="pt-5 font-hindlight">
             In the coming days and weeks we put together the concept, found a
-            location and spread the word. We quickly realised that we were not the only ones wanting to skip
-            small talk for greater connections.
+            location and spread the word. We quickly realised that we were not
+            the only ones wanting to skip small talk for greater connections.
           </p>
 
           <p class="pt-3 font-hindlight">
-            The collective boomed and we open up additional groups. These went on for over 3 years. And some of us still meet
-            today.
+            The collective boomed and we open up additional groups. These went
+            on for over 3 years. And some of us still meet today.
           </p>
         </section>
       </section>
@@ -185,7 +191,7 @@ import "../base.css";
           decoding="async"
           loading="lazy"
           alt="power_of_the_collective"
-          class="mx-auto"
+          class="mx-auto md:pt-0 pt-8"
           title="EmpowerMe Collective"
         />
       </section>
@@ -293,7 +299,9 @@ import "../base.css";
       <section
         class="flex justify-center items-center bg-[url('/images/quote-about.png')] bg-no-repeat bg-cover h-screen"
       >
-        <article class="md:mx-36 mx-4 py-4 px-4 md:px-16 bg-primary/60 backdrop-blur-md rounded-md">
+        <article
+          class="md:mx-36 mx-4 py-4 px-4 md:px-16 bg-primary/60 backdrop-blur-md rounded-md"
+        >
           <p
             class="text-tenth md:p-16 font-hindmedium text-2xl md:text-3xl leading-normal md:leading-relaxed"
           >
