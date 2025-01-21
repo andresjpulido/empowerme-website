@@ -40,9 +40,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     <Header />
     <slot />
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JGJ84VJWG5"
-    ></script>
-    <script>
+    <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-JGJ84VJWG5"
+    />
+    <script type="text/partytown">
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);

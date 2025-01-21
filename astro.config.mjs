@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
+import partytown from '@astrojs/partytown'
 
 import tailwind from "@astrojs/tailwind";
 
@@ -21,5 +22,19 @@ export default defineConfig({
         page !== "https://empowermecollective.com/about/" &&
         page !== "https://empowermecollective.com/letterOfFuture"
     }), 
-    tailwind({applyBaseStyles: false})],
+    tailwind({applyBaseStyles: false}),
+  
+    partytown({
+      config: {
+        forward: ["dataLayer.push"]
+      }
+    })
+  
+  
+  ],
+    
+
+    
+
+
 });
