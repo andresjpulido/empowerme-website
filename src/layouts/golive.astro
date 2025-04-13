@@ -1,0 +1,75 @@
+---
+import Header from "../components/Headergolive.astro";
+import Footer from "../components/Footer.astro";
+import Seo from "../components/Seo.astro";
+import siteData from "../data/siteData.json";
+import "../base.css";
+
+Astro.response.headers.set(
+  "Cache-Control",
+  "public, max-age=300, s-maxage=3600"
+);
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="var(--primary-color)" />
+    <link rel="icon" href="favicon.jpg" />
+    <link rel="preload" href="/images/cover-bg.webp" as="image" />
+    <link rel="preload" href="/images/quote-bg.png" as="image" />
+    <link rel="preload" href="/images/flowers.webp" as="image" />
+
+    <link
+      rel="preload"
+      href="/fonts/Montserrat-Bold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+
+    <Seo {siteData} {title} {description} />
+  </head>
+
+  <body>
+    <Header />
+    <slot />
+
+    <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-JGJ84VJWG5"
+    />
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-JGJ84VJWG5");
+    </script>
+
+    <script
+      type="text/javascript"
+      async
+      src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UrkeHP"
+    ></script> 
+
+    <script type="text/javascript">
+      let cbox = document.querySelectorAll(".klaviyo_form_trigger");
+
+      cbox.forEach((box) => {
+        box.addEventListener("click", () => {
+          window._klOnsite = window._klOnsite || [];
+          window._klOnsite.push(["openForm", "WAaqaG"]);
+        });
+      });
+    </script>
+
+    <div class="klaviyo-form-WAaqaG"></div>
+    <Footer />
+  </body>
+</html>
