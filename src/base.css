@@ -98,7 +98,10 @@
     @apply text-4xl font-bold text-secondary;
   }
   .h2 {
-    @apply text-lg font-bold text-secondary;
+    @apply text-4xl md:text-5xl font-montserratbold font-bold text-secondary;
+  }
+  .h3 {
+    @apply text-xl  font-bold text-secondary;
   }
   .btn-primary {
     @apply bg-five text-primary border-five border-2 hover:border-five hover:bg-primary hover:text-five focus:ring-4 focus:ring-five font-medium 
@@ -123,6 +126,12 @@
     @apply bg-primary text-tenth border-solid border-primary ring-primary ring-2 border-2 hover:bg-tenth hover:text-primary hover:border-tenth
     focus:ring-4 focus:ring-tenth font-medium rounded-md text-sm px-5 py-2 md:py-2.5 me-2 
        focus:outline-none;
+  }
+  .quote {
+    @apply font-montserratbold text-2xl md:text-3xl text-center mx-auto md:w-1/2 ;
+  }
+  .quote-author {
+    @apply font-hindmedium leading-8 text-center mx-auto md:w-1/2 px-4 md:p-0;
   }
   .icons {
     @apply text-white bg-[#355E82] fill-[#355E82];
