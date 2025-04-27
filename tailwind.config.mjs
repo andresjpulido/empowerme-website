@@ -56,6 +56,9 @@ export default {
       ],
       licoriseregular:[
         "licoriseregular"
+      ],
+      GreatVibesRegular:[
+        "GreatVibesRegular"
       ]
     },
   },
