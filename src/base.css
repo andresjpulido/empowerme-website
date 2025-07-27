@@ -19,7 +19,7 @@
 }
 
 @font-face {
-  font-family: "monserrat-bold";
+  font-family: "montserratbold";
   src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -37,6 +37,14 @@
 @font-face {
   font-family: "monserrat-medium";
   src: url("/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "monserratthin";
+  src: url("/fonts/Montserrat-Thin.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -135,6 +143,16 @@
   .btn-sixth {
     @apply bg-primary text-tenth border-solid border-primary ring-primary ring-2 border-2 hover:bg-tenth hover:text-primary hover:border-tenth
     focus:ring-4 focus:ring-tenth font-medium rounded-md text-sm px-5 py-2 md:py-2.5 me-2 
+       focus:outline-none;
+  }
+  .btn-seventh {
+    @apply bg-tenth text-primary border-solid border-primary ring-primary ring-2 border-2 hover:bg-primary hover:text-tenth hover:border-tenth
+    focus:ring-4 focus:ring-primary font-medium rounded-md text-sm px-5 py-2 md:py-2.5 me-2 
+       focus:outline-none;
+  }
+    .btn-eighth {
+    @apply bg-primary text-five border-solid border-five ring-primary ring-2 border-2 hover:bg-five hover:text-primary hover:border-five
+    focus:ring-4 focus:ring-five font-medium rounded-md text-sm px-5 py-2 md:py-2.5 me-2 
        focus:outline-none;
   }
   .quote {

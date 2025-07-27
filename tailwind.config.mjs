@@ -8,9 +8,9 @@ export default {
       secondary: "#E27255",
       tertiary: "#03080C",
       fourth: "#834718",
-      five: "#E27255",
-      six: "#5EA3B5",
-      seven: "#f64d52",
+      five: "#E27255", //orange
+      six: "#5EA3B5", //green
+      seven: "#f64d52",  //rojo
       eight: "#102e46", //dark bg
       nine: "#a7b9c3", //clear fg
       tenth: "#2D6873",
@@ -31,7 +31,7 @@ export default {
         "system-ui",
       ],
       montserratbold: [
-        "monserrat-bold",
+        "montserratbold",
         "Helvetica",
         "ui-sans-serif",
         "system-ui",
@@ -44,6 +44,12 @@ export default {
       ],
       monserrat: [
         "monserrat",
+        "Helvetica",
+        "ui-sans-serif",
+        "system-ui",
+      ],
+      monserratthin: [
+        "monserratthin",
         "Helvetica",
         "ui-sans-serif",
         "system-ui",

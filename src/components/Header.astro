@@ -8,17 +8,26 @@ import HeaderLink from "./HeaderLink.astro";
     <header
       class="flex flex-row justify-between absolute top-0 w-full z-10 px-24 pt-4"
     >
-      <div class="flex mt-4 items-center gap-3">
-        <h1 class="flex flex-col">
-          <a href="/" class="flex flex-col">
+      <div class="flex mt-4 items-center ">
+        <h1 class="flex flex-row align-middle items-center gap-2"> 
+            <div>
+              <img src="/images/em-logo.svg" alt="" class="size-16" /> 
+            </div>
+            <div>
+            <a href="/" class="flex flex-col">
             <span
-              class="font-monserratbold font-bold text-2xl bg-primary text-[#2D6873] pr-1"
+              class="font-montserratbold font-bold text-2xl  text-primary pr-1"
               >EMPOWER ME</span
             >
-            <span class="font-monserrat font-light text-2xl text-primary"
+            <span class="font-monserratthin font-light text-2xl text-primary"
               >COLLECTIVE</span
             ></a
           >
+            </div>
+          
+         
+            
+          
         </h1>
       </div>
       <div class="mt-4 flex gap-4">
@@ -34,7 +43,7 @@ import HeaderLink from "./HeaderLink.astro";
         >
            -->
         <div>
-          <a href="golive" class="btn-sixth"
+          <a href="golive" class="btn-sixth hidden"
             >Go LIVE. Get seen</a
           >
         </div>
@@ -53,15 +62,16 @@ import HeaderLink from "./HeaderLink.astro";
   <!-- nav mobile -->
   <nav class="md:hidden sticky top-0 bg-one z-50">
     <!-- menu mobile -->
-    <div class="flex justify-between items-center px-4 py-2 bg-primary">
+    <div class="flex justify-between items-center px-4 py-2 bg-tenth">
       <div class="mx-auto">
         <div class="md:hidden flex items-center">
-          <h1 class="flex flex-row">
+          <h1 class="flex flex-row ">
+            <img src="/images/em-logo.svg" alt="" class="size-8" /> 
             <span
               class="font-monserratbold font-bold text-lg bg-[#2D6873] text-primary px-1"
               >EMPOWER ME</span
             >
-            <span class="font-monserrat font-light text-lg text-[#2D6873] px-1"
+            <span class="font-monserrat font-light text-primary text-lg px-1"
               >COLLECTIVE</span
             >
           </h1>
