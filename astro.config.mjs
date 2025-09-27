@@ -14,13 +14,13 @@ export default defineConfig({
     sitemap({
       filter: (page) =>
         !page.startsWith("https://empowermecollective.com/blog/")  &&
-        !page.startsWith("https://empowermecollective.com/courses")  /*&&
+        !page.startsWith("https://empowermecollective.com/courses") &&
         page !== "https://empowermecollective.com/termsofuse/" &&
         page !== "https://empowermecollective.com/klaviyo/"  && 
         page !== "https://empowermecollective.com/privacypolicy/"  && 
         page !== "https://empowermecollective.com/termsofuse/" && 
         page !== "https://empowermecollective.com/about/" &&
-        page !== "https://empowermecollective.com/letterOfFuture"*/
+        page !== "https://empowermecollective.com/letterOfFuture"
     }), 
     tailwind({applyBaseStyles: false}),
   
